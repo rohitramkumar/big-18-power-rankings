@@ -5,7 +5,10 @@
   "license": "MIT",
   "scripts": {
     "dev": "NODE_ENV=development tsx server/index.ts",
-    "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
+    "build:client": "vite build --outDir dist/public",
+    "embed:assets": "node scripts/embed-assets.js",
+    "build:worker": "esbuild worker/index.ts --bundle --format=esm --target=es2020 --outfile=dist/worker.js",
+    "build": "npm run build:client && npm run embed:assets && npm run build:worker",
     "deploy": "npx wrangler deploy",
     "start": "NODE_ENV=production node dist/index.js",
     "check": "tsc"

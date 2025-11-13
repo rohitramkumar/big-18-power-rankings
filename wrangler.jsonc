@@ -4,5 +4,5 @@
   "compatibility_flags": [
     "nodejs_compat"
   ],
-  "main": "dist/index.js"
+  "main": "dist/worker.js"
 }
