@@ -21,7 +21,7 @@ export default function Header() {
           <ul className="list-disc list-inside space-y-1.5">
             <li>
               These are "gut-feeling" rankings. I don't use the AP Poll or
-              Kenpom, Torvik, etc to generate the rankings.
+              Kenpom, Torvik, etc as a source here.
             </li>
             <li>
               I love to rank things. If you would like to see something

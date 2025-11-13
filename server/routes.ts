@@ -12,7 +12,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const files = await readdir(rankingsDir);
 
       const rankingFiles = files
-        .filter((file) => file.endsWith(".json"))
+        .filter((file) => file.endsWith(".json") && !file.startsWith("template"))
         .sort()
         .reverse(); // Sorts to get the latest week first
 

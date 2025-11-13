@@ -1,0 +1,146 @@
+[
+    {
+        "id": "msu",
+        "name": "Michigan State",
+        "logoUrl": "michigan-state.png",
+        "rank": 0,
+        "record": "",
+        "blurb": ""
+    },
+    {
+        "id": "ill",
+        "name": "Illinois",
+        "logoUrl": "illinois.png",
+        "rank": 0,
+        "record": "",
+        "blurb": ""
+    },
+	{
+	    "id": "pur",
+        "name": "Purdue",
+	    "logoUrl": "purdue.png",
+        "rank": 0,
+        "record": "",
+        "blurb": ""
+    },
+    {
+        "id": "wis",
+        "name": "Wisconsin",
+        "logoUrl": "wisconsin.png",
+        "rank": 0,
+        "record": "",
+        "blurb": ""
+    },
+    {
+        "id": "iowa",
+        "name": "Iowa",
+        "logoUrl": "iowa.png",
+        "rank": 0,
+        "record": "",
+        "blurb": ""
+    },
+    {
+	    "id": "um",
+        "name": "Michigan",
+        "logoUrl": "michigan.png",
+        "rank": 0,
+        "record": "",
+        "blurb": ""
+    },
+    {
+        "id": "ind",
+        "name": "Indiana",
+        "logoUrl": "indiana.png",
+        "rank": 0,
+        "record": "",
+        "blurb": ""
+    },
+    {
+        "id": "ucla",
+        "name": "UCLA",
+        "logoUrl": "ucla.png",
+        "rank": 0,
+        "record": "",
+        "blurb": ""
+    },
+    {
+        "id": "wash",
+        "name": "Washington",
+        "logoUrl": "washington.png",
+        "rank": 0,
+        "record": "",
+        "blurb": ""
+    },
+    {
+        "id": "usc",
+        "name": "USC",
+        "logoUrl": "usc.png",
+        "rank": 0,
+        "record": "",
+        "blurb": ""
+    },
+    {
+        "id": "nu",
+        "name": "Northwestern",
+        "logoUrl": "northwestern.png",
+        "rank": 0,
+        "record": "",
+        "blurb": ""
+    }, 
+        {
+        "id": "ore",
+        "name": "Oregon",
+        "logoUrl": "oregon.png",
+        "rank": 0,
+        "record": "",
+        "blurb": ""
+    },
+    {
+        "id": "neb",
+        "name": "Nebraska",
+        "logoUrl": "nebraska.png",
+        "rank": 0,
+        "record": "",
+        "blurb": ""
+    },
+    {
+        "id": "osu",
+        "name": "Ohio State",
+        "logoUrl": "ohio-state.png",
+        "rank": 0,
+        "record": "",
+        "blurb": ""
+    },
+        {
+        "id": "minn",
+        "name": "Minnesota",
+        "logoUrl": "minnesota.png",
+        "rank": 0,
+        "record": "",
+        "blurb": ""
+    },
+    {
+        "id": "md",
+        "name": "Maryland",
+        "logoUrl": "maryland.png",
+        "rank": 0,
+        "record": "",
+        "blurb": ""
+    },
+    {
+        "id": "psu",
+        "name": "Penn State",
+        "logoUrl": "penn-state.png",
+        "rank": 0,
+        "record": "",
+        "blurb": ""
+    },
+    {
+        "id": "ru",
+        "name": "Rutgers",
+        "logoUrl": "rutgers.png",
+        "rank": 0,
+        "record": "",
+        "blurb": ""
+    }
+]

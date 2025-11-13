@@ -15,16 +15,16 @@
         "record": "3-0 (0-0)",
         "blurb": "Top 3 roster in the sport. However, the best ability is availability."
     },
-	{
-	    "id": "pu",
+    {
+        "id": "pur",
         "name": "Purdue",
-	    "logoUrl": "purdue.png",
+        "logoUrl": "purdue.png",
         "rank": 3,
         "record": "2-0 (0-0)",
         "blurb": "Braden Smith + TKR + Loyer gives you a hell of a floor but this team lacks an X-factor."
     },
     {
-        "id": "wisc",
+        "id": "wis",
         "name": "Wisconsin",
         "logoUrl": "wisconsin.png",
         "rank": 4,
@@ -40,7 +40,7 @@
         "blurb": "Bennet Stirtz is my darkhorse B10 POY if Braden Smith slips up."
     },
     {
-	    "id": "um",
+        "id": "um",
         "name": "Michigan",
         "logoUrl": "michigan.png",
         "rank": 6,
@@ -48,7 +48,7 @@
         "blurb": "Dusty May could be potentially wasting away the best frontcourt in the country by not getting a stud PG in the portal. Yes, I know Elliot Cadeau exists."
     },
     {
-        "id": "iu",
+        "id": "ind",
         "name": "Indiana",
         "logoUrl": "indiana.png",
         "rank": 7,
@@ -59,7 +59,7 @@
         "id": "ucla",
         "name": "UCLA",
         "logoUrl": "ucla.png",
-        "rank": 8,    
+        "rank": 8,
         "record": "3-0 (0-0)",
         "blurb": "Over/under on the Mick Cronin postgame interview eruptions this year is 6."
     },
@@ -86,9 +86,9 @@
         "rank": 11,
         "record": "3-0 (0-0)",
         "blurb": "This is a solid roster with the best coach in the conference (my opinion). Who will step up outside of Nick Martinelli is the million-dollar question."
-    }, 
-        {
-        "id": "uo",
+    },
+    {
+        "id": "ore",
         "name": "Oregon",
         "logoUrl": "oregon.png",
         "rank": 12,
@@ -111,7 +111,7 @@
         "record": "3-0 (0-0)",
         "blurb": "This team has some pieces but will Diebler get his team to overachieve for once?"
     },
-        {
+    {
         "id": "minn",
         "name": "Minnesota",
         "logoUrl": "minnesota.png",
@@ -120,7 +120,7 @@
         "blurb": "Niko Medved needs time. See if you can ride Cade Tyson to a solid finish and maybe finally recruit some players from the state?"
     },
     {
-        "id": "mary",
+        "id": "md",
         "name": "Maryland",
         "logoUrl": "maryland.png",
         "rank": 16,
@@ -132,7 +132,7 @@
         "name": "Penn State",
         "logoUrl": "penn-state.png",
         "rank": 17,
-        "record": "2-0 (0-0)",
+        "record": "3-0 (0-0)",
         "blurb": "Big fan of Kayden Mingo but that's about it."
     },
     {
