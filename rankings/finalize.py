@@ -2,9 +2,36 @@ import requests
 import json
 import glob
 import os
+import re
 from typing import Dict, Any, Optional, List
+from datetime import datetime
 
 API_URL = "https://engage-api.boostsport.ai/api/sport/mbb/standings/table?seasons=2025&conference=Big%20Ten"
+
+def validate_filename_format(filename: str) -> bool:
+    """
+    Validate that filename has the correct format: YYYY-MM-DD.json
+    and that the date is valid.
+    """
+    # Extract the filename without path
+    basename = os.path.basename(filename)
+    
+    # Check format YYYY-MM-DD.json
+    pattern = r'^(\d{4})-(\d{2})-(\d{2})\.json$'
+    match = re.match(pattern, basename)
+    
+    if not match:
+        print(f"Error: Filename '{basename}' does not match format YYYY-MM-DD.json")
+        return False
+    
+    # Validate that the date is actual valid
+    year, month, day = match.groups()
+    try:
+        datetime(int(year), int(month), int(day))
+        return True
+    except ValueError as e:
+        print(f"Error: Invalid date in filename '{basename}': {e}")
+        return False
 
 def get_records(url: str) -> Dict[str, str]:
     """Returns overall and conference records for each team."""
@@ -97,30 +124,40 @@ if __name__ == "__main__":
     rankings_file = get_active_rankings_file()
     if not rankings_file:
         print("Could not find active rankings file.")
-    else:
-        # Read the rankings file
-        try:
-            with open(rankings_file, 'r') as f:
-                rankings = json.load(f)
-        except (json.JSONDecodeError, IOError) as e:
-            print(f"Error reading rankings file: {e}")
-        else:
-            # Validate the rankings
-            if not validate_rankings(rankings):
-                print("Rankings validation failed.")
-            else:
-                # Get the records from the API
-                records = get_records(API_URL)
-                if not records:
-                    print("Could not retrieve standings data.")
-                else:
-                    # Update rankings with records
-                    updated_rankings = update_rankings_with_records(rankings, records)
-                    
-                    # Write the updated rankings back to the file
-                    try:
-                        with open(rankings_file, 'w') as f:
-                            json.dump(updated_rankings, f, indent=4)
-                        print(f"Successfully updated {rankings_file} with team records.")
-                    except IOError as e:
-                        print(f"Error writing to rankings file: {e}")
+        exit(1)
+    
+    # Validate filename format
+    if not validate_filename_format(rankings_file):
+        print("Filename validation failed.")
+        exit(1)
+    
+    # Read the rankings file
+    try:
+        with open(rankings_file, 'r') as f:
+            rankings = json.load(f)
+    except (json.JSONDecodeError, IOError) as e:
+        print(f"Error reading rankings file: {e}")
+        exit(1)
+    
+    # Validate the rankings
+    if not validate_rankings(rankings):
+        print("Rankings validation failed.")
+        exit(1)
+    
+    # Get the records from the API
+    records = get_records(API_URL)
+    if not records:
+        print("Could not retrieve standings data.")
+        exit(1)
+    
+    # Update rankings with records
+    updated_rankings = update_rankings_with_records(rankings, records)
+    
+    # Write the updated rankings back to the file
+    try:
+        with open(rankings_file, 'w') as f:
+            json.dump(updated_rankings, f, indent=4)
+        print(f"Successfully updated {rankings_file} with team records.")
+    except IOError as e:
+        print(f"Error writing to rankings file: {e}")
+        exit(1)

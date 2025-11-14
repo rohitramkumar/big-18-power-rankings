@@ -11,3 +11,10 @@ export const TeamSchema = z.object({
 });
 
 export type Team = z.infer<typeof TeamSchema>;
+
+export const RankingsSchema = z.object({
+  teams: z.array(TeamSchema),
+  lastUpdated: z.string(),
+});
+
+export type Rankings = z.infer<typeof RankingsSchema>;

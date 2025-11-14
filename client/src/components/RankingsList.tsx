@@ -2,12 +2,15 @@ import { useQuery } from "@tanstack/react-query";
 import RankingItem from "./RankingItem";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Card } from "@/components/ui/card";
-import type { Team } from "@shared/schema";
+import type { Team, Rankings } from "@shared/schema";
 
 export default function RankingsList() {
-  const { data: rankings, isLoading, error } = useQuery<Team[]>({
+  const { data, isLoading, error } = useQuery<Rankings>({
     queryKey: ['/api/rankings'],
   });
+
+  const rankings = data?.teams;
+  const lastUpdated = data?.lastUpdated;
 
   if (isLoading) {
     return (
@@ -58,6 +61,11 @@ export default function RankingsList() {
 
   return (
     <div className="space-y-6 md:space-y-8" data-testid="rankings-list">
+      {lastUpdated && (
+        <p className="text-sm text-muted-foreground text-center">
+          Last updated: <span className="font-semibold text-foreground">{lastUpdated}</span>
+        </p>
+      )}
       {rankings.map((team) => (
         <RankingItem key={team.id} team={team} />
       ))}
