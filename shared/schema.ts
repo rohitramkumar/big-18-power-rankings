@@ -19,3 +19,13 @@ export const RankingsSchema = z.object({
 });
 
 export type Rankings = z.infer<typeof RankingsSchema>;
+
+export const PlayerSchema = z.object({
+  rank: z.number(),
+  name: z.string(),
+  team: z.string(),
+  headshotUrl: z.string(),
+  blurb: z.string(),
+});
+
+export type Player = z.infer<typeof PlayerSchema>;

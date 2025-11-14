@@ -1,0 +1,38 @@
+[
+  {
+    "rank": 1,
+    "name": "Braden Smith",
+    "team": "Purdue",
+    "headshotUrl": "braden-smith.png",
+    "blurb": "Best player in the country. Nothing more to be said."
+  },
+  {
+    "rank": 2,
+    "name": "Kylan Boswell",
+    "team": "Illinois",
+    "headshotUrl": "kylan-boswell.png",
+    "blurb": "Playing the best basketball of his career."
+  },
+    {
+    "rank": 3,
+    "name": "Trey Kaufman-Renn",
+    "team": "Purdue",
+    "headshotUrl": "trey-kaufman-renn.png",
+    "blurb": "Really nice game at Alabama."
+  },
+  {
+    "rank": 4,
+    "name": "Bennett Stirtz",
+    "team": "Iowa",
+    "headshotUrl": "bennett-stirtz.png",
+    "blurb": "Been impressive so far. Competition starts to ratchet up soon and we will see if he rises to the occasion."
+  },
+
+  {
+    "rank": 5,
+    "name": "Jaxon Kohler",
+    "team": "Michigan State",
+    "headshotUrl": "jaxon-kohler.png",
+    "blurb": "Jeremy Fears Jr. might be the leader of this team, but Jaxon Kohler is the engine."
+  }
+]

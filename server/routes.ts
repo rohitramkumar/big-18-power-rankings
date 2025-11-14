@@ -2,7 +2,7 @@ import { Express } from "express";
 import { createServer, type Server } from "http";
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { TeamSchema, Team, RankingsSchema } from "../shared/schema";
+import { TeamSchema, Team, RankingsSchema, PlayerSchema } from "../shared/schema";
 
 function extractDateFromFilename(filename: string): string {
   // Extract date from format like "2025-10-12.json"
@@ -29,7 +29,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const rankingFiles = files
         .filter(
           (file) =>
-            file.endsWith(".json") && !file.startsWith("template") && file !== "mvps.json"
+            file.endsWith(".json") && !file.startsWith("template") && file !== "mvps.json" && file !== "players.json"
         )
         .sort()
         .reverse(); // Sorts to get the latest week first
@@ -77,6 +77,25 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error("Error fetching rankings:", error);
       res.status(500).json({ error: "Failed to fetch rankings." });
+    }
+  });
+
+  // API endpoint for player rankings
+  app.get("/api/players", async (req, res) => {
+    try {
+      const rankingsDir = join(process.cwd(), "rankings");
+      const playersPath = join(rankingsDir, "players.json");
+
+      const fileContent = await readFile(playersPath, "utf-8");
+      const rawData = JSON.parse(fileContent);
+
+      // Validate the data against the schema
+      const validatedData = PlayerSchema.array().parse(rawData);
+
+      res.json(validatedData);
+    } catch (error) {
+      console.error("Error fetching player rankings:", error);
+      res.status(500).json({ error: "Failed to fetch player rankings." });
     }
   });
 

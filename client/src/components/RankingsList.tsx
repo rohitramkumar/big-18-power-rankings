@@ -11,7 +11,6 @@ export default function RankingsList() {
 
   const rankings = data?.teams;
   const lastUpdated = data?.lastUpdated;
-
   if (isLoading) {
     return (
       <div className="space-y-6 md:space-y-8">
