@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Minus } from "lucide-react";
+import { Minus, ArrowUp, ArrowDown } from "lucide-react";
 import type { Team } from "@shared/schema";
 
 interface RankingItemProps {
@@ -9,24 +9,34 @@ interface RankingItemProps {
 
 export default function RankingItem({ team }: RankingItemProps) {
   const getTrendDisplay = () => {
-    if (team.trend === 0) {
+    const trend = Number(team.trend || 0);
+    if (trend === 0) {
       return <Minus className="w-4 h-4" data-testid={`trend-same-${team.id}`} />;
     }
+
+    if (trend > 0) {
+      return (
+        <span className="inline-flex items-center gap-1 font-bold text-sm" data-testid={`trend-up-${team.id}`}>
+          <ArrowUp className="w-3 h-3" />{Math.abs(trend)}
+        </span>
+      );
+    }
+
     return (
-      <span className="font-bold text-sm" data-testid={`trend-number-${team.id}`}>
-        {team.trend}
+      <span className="inline-flex items-center gap-1 font-bold text-sm" data-testid={`trend-down-${team.id}`}>
+        <ArrowDown className="w-3 h-3" />{Math.abs(trend)}
       </span>
     );
   };
 
   const getTrendColor = () => {
-    /*
-    if (team.trend > 0) {
-      return "bg-green-500/10 text-green-700 dark:bg-green-500/20 dark:text-green-400 border-green-500/20";
-    } else if (team.trend < 0) {
-      return "bg-red-500/10 text-red-700 dark:bg-red-500/20 dark:text-red-400 border-red-500/20";
+    const trend = Number(team.trend || 0);
+    if (trend > 0) {
+      return "bg-green-50 text-green-700 border-green-200";
     }
-    */
+    if (trend < 0) {
+      return "bg-red-50 text-red-700 border-red-200";
+    }
     return "bg-muted text-muted-foreground border-muted-border";
   };
 

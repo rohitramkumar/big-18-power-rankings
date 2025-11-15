@@ -64,6 +64,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
         ...t,
         mvp: mvpsMap[t.id] || undefined,
       }));
+
+      // Trend is calculated offline in the finalize script; do not compute here
       // Extract date from filename
       const lastUpdated = extractDateFromFilename(latestRankingFileName);
 

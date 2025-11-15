@@ -69,7 +69,7 @@ def get_active_rankings_file() -> Optional[str]:
     # Exclude template and mvps files from the list of ranking files
     rankings_files = [
         f for f in json_files
-        if not os.path.basename(f).endswith("template.json") and not os.path.basename(f).endswith("mvps.json")
+        if not os.path.basename(f).endswith("template.json") and not os.path.basename(f).endswith("mvps.json") and not os.path.basename(f).endswith("players.json")
     ]
     
     if len(rankings_files) == 0:
@@ -123,6 +123,46 @@ def update_rankings_with_records(rankings: List[Dict[str, Any]], records: Dict[s
     return rankings
 
 
+def compute_and_attach_trends(rankings: List[Dict[str, Any]], archives_subdir: str = "archives") -> List[Dict[str, Any]]:
+    """
+    Read the most recent archive file from `archives_subdir` and attach a numeric
+    `trend` to each team in `rankings`.
+
+    Trend is calculated as: previousRank - currentRank (positive => moved up).
+    If no previous rank exists for a team, trend is set to 0.
+    """
+    archives_dir = os.path.join(os.path.dirname(__file__), archives_subdir)
+    prev_ranks: Dict[str, int] = {}
+    try:
+        if os.path.isdir(archives_dir):
+            archive_files = [f for f in os.listdir(archives_dir) if f.endswith('.json')]
+            archive_files.sort()
+            archive_files.reverse()
+            if archive_files:
+                latest_archive = os.path.join(archives_dir, archive_files[0])
+                with open(latest_archive, 'r') as af:
+                    archive_data = json.load(af)
+                for t in archive_data:
+                    tid = t.get('id')
+                    trank = t.get('rank')
+                    if isinstance(tid, str) and isinstance(trank, int):
+                        prev_ranks[tid] = trank
+    except Exception:
+        prev_ranks = {}
+
+    # Attach trend to each team
+    for team in rankings:
+        tid = team.get('id')
+        current_rank = team.get('rank')
+        if isinstance(tid, str) and isinstance(current_rank, int):
+            prev = prev_ranks.get(tid)
+            team['trend'] = (prev - current_rank) if isinstance(prev, int) else 0
+        else:
+            team['trend'] = 0
+
+    return rankings
+
+
 if __name__ == "__main__":
     # Get the active rankings file
     rankings_file = get_active_rankings_file()
@@ -156,6 +196,9 @@ if __name__ == "__main__":
     
     # Update rankings with records
     updated_rankings = update_rankings_with_records(rankings, records)
+    
+    # Compute and attach trend values using the latest archive
+    updated_rankings = compute_and_attach_trends(updated_rankings)
     
     # Write the updated rankings back to the file
     try:
