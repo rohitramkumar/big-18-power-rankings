@@ -20,8 +20,9 @@ export default function Header() {
           <p className="font-bold mb-2 text-foreground">A couple notes:</p>
           <ul className="list-disc list-inside space-y-1.5">
             <li>
-              These are "gut-feeling" rankings. I don't use the AP Poll or
-              Kenpom, Torvik, etc as a source here.
+              These are "gut-feeling" rankings. I don't use
+              Kenpom, Torvik, etc as a source here although I do
+              include those data points for your reference.
             </li>
             <li>
               I love to rank things. If you would like to see something

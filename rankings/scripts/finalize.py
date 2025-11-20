@@ -1,12 +1,10 @@
-import requests
 import json
 import glob
 import os
 import re
 from typing import Dict, Any, Optional, List
 from datetime import datetime
-
-API_URL = "https://engage-api.boostsport.ai/api/sport/mbb/standings/table?seasons=2025&conference=Big%20Ten"
+from external import get_team_records
 
 def validate_filename_format(filename: str) -> bool:
     """
@@ -33,39 +31,11 @@ def validate_filename_format(filename: str) -> bool:
         print(f"Error: Invalid date in filename '{basename}': {e}")
         return False
 
-def get_records(url: str) -> Dict[str, str]:
-    """Returns overall and conference records for each team."""
-    try:
-        response = requests.get(url, timeout=10)     
-        response.raise_for_status()
-        data: Dict[str, Any] = response.json()
-    except requests.exceptions.RequestException as e:
-        print(f"An error occurred during the network request: {e}")
-        return {}
-    except json.JSONDecodeError as e:
-        print(f"An error occurred while decoding JSON: {e}")
-        return {}
-
-    team_records: Dict[str, str] = {}
-    
-    for team in data['data']:
-        alias = team['alias'].lower()
-        for stat in team['data']:
-          if "conf_record" in stat:
-            conference_record = stat['conf_record']
-          if "ovr_record" in stat:
-            overall_record = stat['ovr_record']
-        
-        formatted_record = f"{overall_record} ({conference_record})"
-        
-        team_records[alias] = formatted_record
-            
-    return team_records
-
 
 def get_active_rankings_file() -> Optional[str]:
     """Find the active rankings JSON file (excludes template.json)."""
-    json_files = glob.glob(os.path.join(os.path.dirname(__file__), "*.json"))
+    rankings_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    json_files = glob.glob(os.path.join(rankings_dir, "*.json"))
     # Exclude template and mvps files from the list of ranking files
     rankings_files = [
         f for f in json_files
@@ -73,12 +43,12 @@ def get_active_rankings_file() -> Optional[str]:
     ]
     
     if len(rankings_files) == 0:
-        print("Error: No active rankings file found.")
+        print(f"Error: No active rankings file found in {rankings_dir}.")
         return None
     if len(rankings_files) > 1:
-        print(f"Error: Multiple rankings files found: {rankings_files}")
+        print(f"Error: Multiple rankings files found in {rankings_dir}: {rankings_files}")
         return None
-    
+
     return rankings_files[0]
 
 
@@ -111,7 +81,7 @@ def validate_rankings(rankings: List[Dict[str, Any]]) -> bool:
     return True
 
 
-def update_rankings_with_records(rankings: List[Dict[str, Any]], records: Dict[str, str]) -> List[Dict[str, Any]]:
+def update_rankings_with_team_stats(rankings: List[Dict[str, Any]], records: Dict[str, str]) -> List[Dict[str, Any]]:
     """Update the record field for each team using the alias as the key."""
     for team in rankings:
         team_id = team.get("id", "").lower()
@@ -123,7 +93,7 @@ def update_rankings_with_records(rankings: List[Dict[str, Any]], records: Dict[s
     return rankings
 
 
-def compute_and_attach_trends(rankings: List[Dict[str, Any]], archives_subdir: str = "archives") -> List[Dict[str, Any]]:
+def compute_and_attach_trends(rankings: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """
     Read the most recent archive file from `archives_subdir` and attach a numeric
     `trend` to each team in `rankings`.
@@ -131,7 +101,7 @@ def compute_and_attach_trends(rankings: List[Dict[str, Any]], archives_subdir: s
     Trend is calculated as: previousRank - currentRank (positive => moved up).
     If no previous rank exists for a team, trend is set to 0.
     """
-    archives_dir = os.path.join(os.path.dirname(__file__), archives_subdir)
+    archives_dir = os.path.join(os.path.dirname(__file__), "../archives")
     prev_ranks: Dict[str, int] = {}
     try:
         if os.path.isdir(archives_dir):
@@ -188,14 +158,13 @@ if __name__ == "__main__":
         print("Rankings validation failed.")
         exit(1)
     
-    # Get the records from the API
-    records = get_records(API_URL)
-    if not records:
-        print("Could not retrieve standings data.")
+    team_records = get_team_records()
+    if not team_records:
+        print("Could not retrieve team records data.")
         exit(1)
     
-    # Update rankings with records
-    updated_rankings = update_rankings_with_records(rankings, records)
+    # Update rankings with team records
+    updated_rankings = update_rankings_with_team_stats(rankings, team_records)
     
     # Compute and attach trend values using the latest archive
     updated_rankings = compute_and_attach_trends(updated_rankings)

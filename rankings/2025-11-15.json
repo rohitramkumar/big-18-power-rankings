@@ -4,7 +4,7 @@
         "name": "Purdue",
         "logoUrl": "purdue.png",
         "rank": 1,
-        "record": "3-0 (0-0)",
+        "record": "4-0 (0-0), TRank: 7",
         "blurb": "The win at Alabama is the best win in CBB this year so far.",
         "trend": 2
     },
@@ -13,7 +13,7 @@
         "name": "Michigan State",
         "logoUrl": "michigan-state.png",
         "rank": 2,
-        "record": "3-0 (0-0)",
+        "record": "4-0 (0-0), TRank: 18",
         "blurb": "MSU and Illinois are 2a and 2b. I give MSU the slight edge right now because I think they match up well with Illinois head-to-head.",
         "trend": -1
     },
@@ -22,7 +22,7 @@
         "name": "Illinois",
         "logoUrl": "illinois.png",
         "rank": 3,
-        "record": "4-0 (0-0)",
+        "record": "4-1 (0-0), TRank: 3",
         "blurb": "Top 3 roster in the sport. However, the best ability is availability.",
         "trend": -1
     },
@@ -31,7 +31,7 @@
         "name": "Wisconsin",
         "logoUrl": "wisconsin.png",
         "rank": 4,
-        "record": "3-0 (0-0)",
+        "record": "4-0 (0-0), TRank: 28",
         "blurb": "Not a flashy roster but I'd put money on a top 4 conference finish.",
         "trend": 0
     },
@@ -40,7 +40,7 @@
         "name": "Iowa",
         "logoUrl": "iowa.png",
         "rank": 5,
-        "record": "3-0 (0-0)",
+        "record": "4-0 (0-0), TRank: 27",
         "blurb": "Bennet Stirtz is my darkhorse B10 POY if Braden Smith slips up.",
         "trend": 0
     },
@@ -49,7 +49,7 @@
         "name": "Michigan",
         "logoUrl": "michigan.png",
         "rank": 6,
-        "record": "3-0 (0-0)",
+        "record": "4-0 (0-0), TRank: 4",
         "blurb": "Playing with fire a bit and fortunate to not be 1-2 right now. They will figure things out but this team is definitely a bit overrated so far.",
         "trend": 0
     },
@@ -58,7 +58,7 @@
         "name": "Indiana",
         "logoUrl": "indiana.png",
         "rank": 7,
-        "record": "3-0 (0-0)",
+        "record": "4-0 (0-0), TRank: 26",
         "blurb": "Being a competent team shooting the 3-point shot is a great way to not get boo'd off your home floor.",
         "trend": 0
     },
@@ -67,7 +67,7 @@
         "name": "Washington",
         "logoUrl": "washington.png",
         "rank": 8,
-        "record": "3-1 (0-0)",
+        "record": "4-1 (0-0), TRank: 53",
         "blurb": "This team is looking solid and is still waiting on Desmond Claude.",
         "trend": 1
     },
@@ -76,7 +76,7 @@
         "name": "UCLA",
         "logoUrl": "ucla.png",
         "rank": 9,
-        "record": "3-1 (0-0)",
+        "record": "4-1 (0-0), TRank: 19",
         "blurb": "Over/under on the Mick Cronin postgame interview eruptions this year is 6.",
         "trend": -1
     },
@@ -85,7 +85,7 @@
         "name": "USC",
         "logoUrl": "usc.png",
         "rank": 10,
-        "record": "3-0 (0-0)",
+        "record": "3-0 (0-0), TRank: 22",
         "blurb": "I have zero clue what to think about this team.",
         "trend": 0
     },
@@ -94,7 +94,7 @@
         "name": "Northwestern",
         "logoUrl": "northwestern.png",
         "rank": 11,
-        "record": "4-0 (0-0)",
+        "record": "4-0 (0-0), TRank: 55",
         "blurb": "This is a solid roster with the best coach in the conference (my opinion). Who will step up outside of Nick Martinelli is the million-dollar question.",
         "trend": 0
     },
@@ -103,7 +103,7 @@
         "name": "Oregon",
         "logoUrl": "oregon.png",
         "rank": 12,
-        "record": "3-0 (0-0)",
+        "record": "4-0 (0-0), TRank: 37",
         "blurb": "Jackson Shelstad is possibly the most valuable player in the conference because this team has looked god awful without him.",
         "trend": 0
     },
@@ -112,7 +112,7 @@
         "name": "Nebraska",
         "logoUrl": "nebraska.png",
         "rank": 13,
-        "record": "3-0 (0-0)",
+        "record": "4-0 (0-0), TRank: 40",
         "blurb": "The natives in Lincoln are going to start to get restless if this team fails to make the tournament.",
         "trend": 0
     },
@@ -121,7 +121,7 @@
         "name": "Ohio State",
         "logoUrl": "ohio-state.png",
         "rank": 14,
-        "record": "3-0 (0-0)",
+        "record": "4-0 (0-0), TRank: 24",
         "blurb": "This team has some pieces but will Diebler get his team to overachieve for once?",
         "trend": 0
     },
@@ -130,7 +130,7 @@
         "name": "Minnesota",
         "logoUrl": "minnesota.png",
         "rank": 15,
-        "record": "2-1 (0-0)",
+        "record": "4-1 (0-0), TRank: 79",
         "blurb": "Niko Medved needs time. See if you can ride Cade Tyson to a solid finish and maybe finally recruit some players from the state?",
         "trend": 0
     },
@@ -139,7 +139,7 @@
         "name": "Maryland",
         "logoUrl": "maryland.png",
         "rank": 16,
-        "record": "2-1 (0-0)",
+        "record": "4-1 (0-0), TRank: 58",
         "blurb": "Will be a bit tough to watch offensively this year. However, will probably beat Illinois by double digits.",
         "trend": 0
     },
@@ -148,7 +148,7 @@
         "name": "Penn State",
         "logoUrl": "penn-state.png",
         "rank": 17,
-        "record": "3-0 (0-0)",
+        "record": "5-0 (0-0), TRank: 97",
         "blurb": "Big fan of Kayden Mingo but that's about it.",
         "trend": 0
     },
@@ -157,7 +157,7 @@
         "name": "Rutgers",
         "logoUrl": "rutgers.png",
         "rank": 18,
-        "record": "3-0 (0-0)",
+        "record": "4-0 (0-0), TRank: 102",
         "blurb": "This roster is..yikes. Pikiell should firmly be on the hot seat.",
         "trend": 0
     }
