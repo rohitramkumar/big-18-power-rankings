@@ -1,0 +1,164 @@
+[
+    {
+        "id": "pur",
+        "name": "Purdue",
+        "logoUrl": "purdue.png",
+        "rank": 1,
+        "record": "6-0 (0-0), TRank: 3",
+        "blurb": "The win at Alabama is the best win in CBB this year so far.",
+        "trend": 0
+    },
+    {
+        "id": "msu",
+        "name": "Michigan State",
+        "logoUrl": "michigan-state.png",
+        "rank": 2,
+        "record": "5-0 (0-0), TRank: 18",
+        "blurb": "MSU and Illinois are 2a and 2b. I give MSU the slight edge right now because I think they match up well with Illinois head-to-head.",
+        "trend": 0
+    },
+    {
+        "id": "ill",
+        "name": "Illinois",
+        "logoUrl": "illinois.png",
+        "rank": 3,
+        "record": "4-1 (0-0), TRank: 4",
+        "blurb": "Andrej Stojakovic is a dude but the lack of consistent outside shooting is a huge concern moving forward.",
+        "trend": 0
+    },
+    {
+        "id": "mich",
+        "name": "Michigan",
+        "logoUrl": "michigan.png",
+        "rank": 4,
+        "record": "4-0 (0-0), TRank: 5",
+        "blurb": "Nice job taking care of business on the road at TCU. Going to find out a lot about this team at the Players Era festival.",
+        "trend": 2
+    },
+    {
+        "id": "wis",
+        "name": "Wisconsin",
+        "logoUrl": "wisconsin.png",
+        "rank": 5,
+        "record": "4-1 (0-0), TRank: 34",
+        "blurb": "Tough ask to beat BYU in a de facto road game. Still very high on this team.",
+        "trend": -1
+    },
+    {
+        "id": "iowa",
+        "name": "Iowa",
+        "logoUrl": "iowa.png",
+        "rank": 6,
+        "record": "5-0 (0-0), TRank: 26",
+        "blurb": "Bennet Stirtz is my darkhorse B10 POY if Braden Smith slips up.",
+        "trend": -1
+    },
+    {
+        "id": "ind",
+        "name": "Indiana",
+        "logoUrl": "indiana.png",
+        "rank": 7,
+        "record": "5-0 (0-0), TRank: 25",
+        "blurb": "The win against Marquette is losing luster every day.",
+        "trend": 0
+    },
+    {
+        "id": "wash",
+        "name": "Washington",
+        "logoUrl": "washington.png",
+        "rank": 8,
+        "record": "4-1 (0-0), TRank: 54",
+        "blurb": "This team is looking solid and is still waiting on Desmond Claude to get fully healthy.",
+        "trend": 0
+    },
+    {
+        "id": "ucla",
+        "name": "UCLA",
+        "logoUrl": "ucla.png",
+        "rank": 9,
+        "record": "5-1 (0-0), TRank: 17",
+        "blurb": "Bit concerning that Mick Cronin had to bench four starters to send a message. This is the one of the oldest teams in the sport...",
+        "trend": 0
+    },
+    {
+        "id": "nu",
+        "name": "Northwestern",
+        "logoUrl": "northwestern.png",
+        "rank": 10,
+        "record": "4-1 (0-0), TRank: 53",
+        "blurb": "Chris Collins finally has a big man that can score in Arrinten Page. This team will struggle with consistency but they are going to be a tough out. ",
+        "trend": 1
+    },
+    {
+        "id": "neb",
+        "name": "Nebraska",
+        "logoUrl": "nebraska.png",
+        "rank": 11,
+        "record": "6-0 (0-0), TRank: 37",
+        "blurb": "Pryce Sandfort has been a pleasant surprise. ",
+        "trend": 2
+    },
+    {
+        "id": "ore",
+        "name": "Oregon",
+        "logoUrl": "oregon.png",
+        "rank": 12,
+        "record": "4-0 (0-0), TRank: 36",
+        "blurb": "Another team we will find alot about at Players Era.",
+        "trend": 0
+    },
+    {
+        "id": "usc",
+        "name": "USC",
+        "logoUrl": "usc.png",
+        "rank": 13,
+        "record": "4-0 (0-0), TRank: 27",
+        "blurb": "Needed triple overtime and a miracle shot to beat Troy at home.",
+        "trend": -3
+    },
+    {
+        "id": "osu",
+        "name": "Ohio State",
+        "logoUrl": "ohio-state.png",
+        "rank": 14,
+        "record": "5-0 (0-0), TRank: 22",
+        "blurb": "Looked very unimpressive in a close win over Notre Dame. Just not seeing the vision this year for this team.",
+        "trend": 0
+    },
+    {
+        "id": "minn",
+        "name": "Minnesota",
+        "logoUrl": "minnesota.png",
+        "rank": 15,
+        "record": "4-1 (0-0), TRank: 79",
+        "blurb": "Niko Medved needs time. See if you can ride Cade Tyson to a solid finish and maybe finally recruit some players from the state?",
+        "trend": 0
+    },
+    {
+        "id": "md",
+        "name": "Maryland",
+        "logoUrl": "maryland.png",
+        "rank": 16,
+        "record": "4-1 (0-0), TRank: 58",
+        "blurb": "Really scary injury for Pharell Payne but it appears he will return very soon. Positive news for a team that would be lost without him.",
+        "trend": 0
+    },
+    {
+        "id": "psu",
+        "name": "Penn State",
+        "logoUrl": "penn-state.png",
+        "rank": 17,
+        "record": "5-0 (0-0), TRank: 96",
+        "blurb": "Big fan of Kayden Mingo but that's about it.",
+        "trend": 0
+    },
+    {
+        "id": "ru",
+        "name": "Rutgers",
+        "logoUrl": "rutgers.png",
+        "rank": 18,
+        "record": "4-1 (0-0), TRank: 119",
+        "blurb": "After a brutal loss to Central Connectictut St., it's becoming increasingly clear that this team is going to lose more than 15 games in the conference season.",
+        "trend": 0
+    }
+]
