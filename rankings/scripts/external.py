@@ -87,7 +87,7 @@ def get_torvik() -> Dict[str, int]:
     # Assuming data is a dict with team names as keys and ranking info as values
     # Adjust parsing based on actual Torvik JSON structure
     for team in data:
-        team_name = team[1]
+        team_name = team[1].replace("St.", "State")
         if team_name in name_to_id:
             team_id = name_to_id[team_name]
             # Extract rank from team_info (adjust based on actual structure)
