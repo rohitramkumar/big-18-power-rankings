@@ -1,12 +1,25 @@
 import { useQuery } from "@tanstack/react-query";
+import { useState } from "react";
 import RankingItem from "./RankingItem";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Card } from "@/components/ui/card";
 import type { Team, Rankings } from "@shared/schema";
 
 export default function RankingsList() {
-  const { data, isLoading, error } = useQuery<Rankings>({
-    queryKey: ['/api/rankings'],
+  const [selectedArchive, setSelectedArchive] = useState<string | undefined>(undefined);
+
+  const { data: archives } = useQuery<string[]>({
+    queryKey: ['/api/archives'],
+  });
+
+  const { data, isLoading, error, refetch } = useQuery<Rankings>({
+    queryKey: ['/api/rankings', selectedArchive],
+    queryFn: async () => {
+      const url = selectedArchive ? `/api/rankings?filename=${selectedArchive}` : `/api/rankings`;
+      const res = await fetch(url);
+      if (!res.ok) throw new Error('Failed to fetch rankings');
+      return res.json();
+    },
   });
 
   const rankings = data?.teams;
@@ -60,6 +73,26 @@ export default function RankingsList() {
 
   return (
     <div className="space-y-6 md:space-y-8" data-testid="rankings-list">
+      {/* Archive selector */}
+      <div className="flex justify-center">
+        <select
+          className="select select-bordered max-w-xs"
+          value={selectedArchive ?? ""}
+          onChange={(e) => {
+            const v = e.target.value || undefined;
+            setSelectedArchive(v);
+            // refetch is optional because react-query will auto-refetch when queryKey changes
+            void refetch();
+          }}
+        >
+          <option value="">Latest</option>
+          {archives?.map((a) => (
+            <option key={a} value={a}>
+              {a}
+            </option>
+          ))}
+        </select>
+      </div>
       {lastUpdated && (
         <p className="text-sm text-muted-foreground text-center">
           Last updated: <span className="font-semibold text-foreground">{lastUpdated}</span>
