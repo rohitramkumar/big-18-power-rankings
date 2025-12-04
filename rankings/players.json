@@ -1,37 +1,40 @@
-[
-  {
-    "rank": 1,
-    "name": "Braden Smith",
-    "team": "Purdue",
-    "headshotUrl": "braden-smith.png",
-    "blurb": "Best player in the country. Nothing more to be said."
-  },
-  {
-    "rank": 2,
-    "name": "Jaxon Kohler",
-    "team": "Michigan State",
-    "headshotUrl": "jaxon-kohler.png",
-    "blurb": "Jeremy Fears Jr. might be the leader of this team, but Jaxon Kohler is the engine."
-  },
-  {
-    "rank": 3,
-    "name": "Bennett Stirtz",
-    "team": "Iowa",
-    "headshotUrl": "bennett-stirtz.png",
-    "blurb": "Struggled against MSU but he will adjust."
-  },
-  {
-    "rank": 4,
-    "name": "Trey Kaufman-Renn",
-    "team": "Purdue",
-    "headshotUrl": "trey-kaufman-renn.png",
-    "blurb": "Really nice game at Alabama."
-  },
-  {
-    "rank": 5,
-    "name": "Yaxel Lendeborg",
-    "team": "Michigan",
-    "headshotUrl": "yaxel-lendeborg.png",
-    "blurb": "Will be unguardable if he can shoot close to 40% from three."
-  }
-]
+{
+  "top": [
+    {
+      "rank": 1,
+      "name": "Braden Smith",
+      "team": "Purdue",
+      "headshotUrl": "braden-smith.png",
+      "blurb": "Best player in the country. Nothing more to be said."
+    },
+    {
+      "rank": 2,
+      "name": "Jaxon Kohler",
+      "team": "Michigan State",
+      "headshotUrl": "jaxon-kohler.png",
+      "blurb": "Jeremy Fears Jr. might be the leader of this team, but Jaxon Kohler is the engine."
+    },
+    {
+      "rank": 3,
+      "name": "Bennett Stirtz",
+      "team": "Iowa",
+      "headshotUrl": "bennett-stirtz.png",
+      "blurb": "Struggled against MSU but he will adjust."
+    },
+    {
+      "rank": 4,
+      "name": "Trey Kaufman-Renn",
+      "team": "Purdue",
+      "headshotUrl": "trey-kaufman-renn.png",
+      "blurb": "Really nice game at Alabama."
+    },
+    {
+      "rank": 5,
+      "name": "Yaxel Lendeborg",
+      "team": "Michigan",
+      "headshotUrl": "yaxel-lendeborg.png",
+      "blurb": "Will be unguardable if he can shoot close to 40% from three."
+    }
+  ],
+  "honorableMentions": [{"name": "Jeremy Fears Jr."}, {"name": "Kylan Boswell"}, {"name": "John Blackwell"}]
+}

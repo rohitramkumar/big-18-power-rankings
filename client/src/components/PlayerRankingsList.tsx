@@ -1,10 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Card } from "@/components/ui/card";
-import type { Player, Rankings } from "@shared/schema";
+import type { Players, Player } from "@shared/schema";
 
 export default function PlayerRankingsList() {
-  const { data: players, isLoading, error } = useQuery<Player[]>({
+  const { data: players, isLoading, error } = useQuery<Players>({
     queryKey: ['/api/players'],
   });
 
@@ -40,7 +40,7 @@ export default function PlayerRankingsList() {
     );
   }
 
-  if (!players || players.length === 0) {
+  if (!players || players.top.length === 0) {
     return (
       <Card className="p-8 text-center">
         <p className="text-lg text-muted-foreground">
@@ -51,7 +51,7 @@ export default function PlayerRankingsList() {
   }
 
   return (
-    <div className="space-y-4" data-testid="player-rankings-list">
+    <div className="space-y-8" data-testid="player-rankings-list">
       <div className="flex flex-col items-center gap-2">
         <div className="bg-muted/50 border border-border rounded-md p-3 mb-0 w-full">
           <p className="text-sm text-muted-foreground">
@@ -59,42 +59,56 @@ export default function PlayerRankingsList() {
           </p>
         </div>
       </div>
-      {players.map((player) => (
-        <Card
-          key={player.rank}
-          className="p-4 md:p-6 hover-elevate"
-          data-testid={`player-item-${player.rank}`}
-        >
-          <div className="flex gap-4 md:gap-6 items-start">
-            <div className="flex-shrink-0 flex flex-col items-center gap-2">
-              <div className="text-4xl md:text-5xl font-bold text-primary">
-                {player.rank}
+      
+      <div className="space-y-4">
+        {players.top.map((player) => (
+          <Card
+            key={player.rank}
+            className="p-4 md:p-6 hover-elevate"
+            data-testid={`player-item-${player.rank}`}
+          >
+            <div className="flex gap-4 md:gap-6 items-start">
+              <div className="flex-shrink-0 flex flex-col items-center gap-2">
+                <div className="text-4xl md:text-5xl font-bold text-primary">
+                  {player.rank}
+                </div>
+              </div>
+
+              {player.headshotUrl && (
+                <img
+                  src={player.headshotUrl}
+                  alt={`${player.name} headshot`}
+                  className="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 rounded-md object-cover border border-border"
+                  data-testid={`player-headshot-${player.rank}`}
+                />
+              )}
+
+              <div className="flex-1 min-w-0">
+                <h3 className="text-lg md:text-xl font-semibold mb-1">
+                  {player.name}
+                </h3>
+                <p className="text-sm font-medium text-muted-foreground mb-2">
+                  {player.team}
+                </p>
+                <p className="text-base leading-relaxed text-muted-foreground">
+                  {player.blurb}
+                </p>
               </div>
             </div>
+          </Card>
+        ))}
+      </div>
 
-            {player.headshotUrl && (
-              <img
-                src={player.headshotUrl}
-                alt={`${player.name} headshot`}
-                className="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 rounded-md object-cover border border-border"
-                data-testid={`player-headshot-${player.rank}`}
-              />
-            )}
-
-            <div className="flex-1 min-w-0">
-              <h3 className="text-lg md:text-xl font-semibold mb-1">
-                {player.name}
-              </h3>
-              <p className="text-sm font-medium text-muted-foreground mb-2">
-                {player.team}
-              </p>
-              <p className="text-base leading-relaxed text-muted-foreground">
-                {player.blurb}
-              </p>
-            </div>
-          </div>
-        </Card>
-      ))}
+      {players.honorableMentions.length > 0 && (
+        <div className="space-y-2">
+          <h3 className="text-sm font-semibold">Honorable Mention</h3>
+          <Card className="p-4">
+            <p className="text-sm text-muted-foreground">
+              {players.honorableMentions.map((player) => player.name).join(", ")}
+            </p>
+          </Card>
+        </div>
+      )}
     </div>
   );
 }

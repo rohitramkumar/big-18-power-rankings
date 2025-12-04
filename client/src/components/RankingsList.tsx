@@ -74,30 +74,57 @@ export default function RankingsList() {
   return (
     <div className="space-y-6 md:space-y-8" data-testid="rankings-list">
       {/* Archive selector */}
-      <div className="flex justify-center">
-        <select
-          className="select select-bordered max-w-xs"
-          value={selectedArchive ?? ""}
-          onChange={(e) => {
-            const v = e.target.value || undefined;
-            setSelectedArchive(v);
-            // refetch is optional because react-query will auto-refetch when queryKey changes
-            void refetch();
-          }}
-        >
-          <option value="">Latest</option>
-          {archives?.map((a) => (
-            <option key={a} value={a}>
-              {a}
-            </option>
-          ))}
-        </select>
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
+        {lastUpdated && (
+          <p className="text-sm text-muted-foreground">
+            Last updated: <span className="font-semibold text-foreground">{lastUpdated}</span>
+          </p>
+        )}
+        <div className="flex items-center gap-2">
+          <span className="text-sm text-muted-foreground">Viewing:</span>
+          <select
+            className="select select-bordered"
+            value={selectedArchive ?? ""}
+            onChange={(e) => {
+              const v = e.target.value || undefined;
+              setSelectedArchive(v);
+              // refetch is optional because react-query will auto-refetch when queryKey changes
+              void refetch();
+            }}
+          >
+            <option value="">Latest</option>
+            {archives?.map((a) => (
+              <option key={a} value={a}>
+                {a}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
-      {lastUpdated && (
-        <p className="text-sm text-muted-foreground text-center">
-          Last updated: <span className="font-semibold text-foreground">{lastUpdated}</span>
-        </p>
-      )}
+      
+      {/* Tournament Status Legend */}
+      <Card className="p-4 bg-muted/30">
+        <h3 className="text-sm font-semibold mb-3">NCAA Tournament Status Legend</h3>
+        <div className="flex flex-wrap items-center gap-4 text-sm">
+          <div className="flex items-center gap-2">
+            <span className="text-xl">🔒</span>
+            <span className="text-muted-foreground">Lock</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="text-xl">👷</span>
+            <span className="text-muted-foreground">Work to Do</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="text-xl">🤔</span>
+            <span className="text-muted-foreground">Not Sure</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="text-xl">☠️</span>
+            <span className="text-muted-foreground">Out</span>
+          </div>
+        </div>
+      </Card>
+
       {rankings.map((team) => (
         <RankingItem key={team.id} team={team} />
       ))}

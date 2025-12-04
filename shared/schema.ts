@@ -9,6 +9,7 @@ export const TeamSchema = z.object({
   mvp: z.string().optional(),
   blurb: z.string(),
   record: z.string(),
+  tournamentStatus: z.enum(['lock', 'work-to-do', 'not-sure', 'out']).optional(),
 });
 
 export type Team = z.infer<typeof TeamSchema>;
@@ -21,11 +22,18 @@ export const RankingsSchema = z.object({
 export type Rankings = z.infer<typeof RankingsSchema>;
 
 export const PlayerSchema = z.object({
-  rank: z.number(),
+  rank: z.number().optional(),
   name: z.string(),
-  team: z.string(),
-  headshotUrl: z.string(),
-  blurb: z.string(),
+  team: z.string().optional(),
+  headshotUrl: z.string().optional(),
+  blurb: z.string().optional(),
 });
 
 export type Player = z.infer<typeof PlayerSchema>;
+
+export const PlayersSchema = z.object({
+  top: z.array(PlayerSchema),
+  honorableMentions: z.array(PlayerSchema),
+});
+
+export type Players = z.infer<typeof PlayersSchema>;

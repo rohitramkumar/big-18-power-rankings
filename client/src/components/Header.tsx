@@ -16,20 +16,6 @@ export default function Header() {
             From someone that actually watches all the games
           </p>
         </div>
-        <div className="mt-6 text-sm text-muted-foreground">
-          <p className="font-bold mb-2 text-foreground">A couple notes:</p>
-          <ul className="list-disc list-inside space-y-1.5">
-            <li>
-              These are "gut-feeling" rankings. I don't use
-              Kenpom, Torvik, etc as a source here although I do
-              include those data points for your reference.
-            </li>
-            <li>
-              I love to rank things. If you would like to see something
-              added here, reach out to admin@big18basketball.com.
-            </li>
-          </ul>
-        </div>
       </div>
     </header>
   );

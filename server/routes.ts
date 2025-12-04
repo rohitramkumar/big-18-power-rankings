@@ -2,7 +2,7 @@ import { Express } from "express";
 import { createServer, type Server } from "http";
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { TeamSchema, Team, RankingsSchema, PlayerSchema } from "../shared/schema";
+import { TeamSchema, Team, RankingsSchema, PlayerSchema, PlayersSchema } from "../shared/schema";
 
 function extractDateFromFilename(filename: string): string {
   // Extract date from format like "2025-10-12.json"
@@ -142,7 +142,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const rawData = JSON.parse(fileContent);
 
       // Validate the data against the schema
-      const validatedData = PlayerSchema.array().parse(rawData);
+      const validatedData = PlayersSchema.parse(rawData);
 
       res.json(validatedData);
     } catch (error) {

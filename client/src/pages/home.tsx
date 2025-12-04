@@ -40,6 +40,9 @@ export default function Home() {
             <p className="text-sm text-muted-foreground" data-testid="footer-text">
               Disclaimer: The creator of this page is an Illinois fan. 
             </p>
+            <p className="text-sm text-muted-foreground">
+              Questions? Get in touch at admin@big18basketball.com
+            </p>
             <a 
               href="https://x.com/Big18Basketball" 
               target="_blank" 

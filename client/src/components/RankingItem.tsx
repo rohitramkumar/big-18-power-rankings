@@ -40,6 +40,23 @@ export default function RankingItem({ team }: RankingItemProps) {
     return "bg-muted text-muted-foreground border-muted-border";
   };
 
+  const getTournamentStatusEmoji = () => {
+    switch (team.tournamentStatus) {
+      case 'lock':
+        return '🔒';
+      case 'work-to-do':
+        return '👷';
+      case 'not-sure':
+        return '🤔';
+      case 'out':
+        return '☠️';
+      default:
+        return null;
+    }
+  };
+
+  const tournamentStatusEmoji = getTournamentStatusEmoji();
+
   return (
     <Card 
       className="p-4 md:p-6 hover-elevate" 
@@ -89,6 +106,11 @@ export default function RankingItem({ team }: RankingItemProps) {
           {team.mvp && (
             <p className="text-sm text-muted-foreground mb-2" data-testid={`team-mvp-${team.id}`}>
               <span className="font-medium text-foreground">MVP:</span> {team.mvp}
+            </p>
+          )}
+          {tournamentStatusEmoji && (
+            <p className="text-sm text-muted-foreground mb-2" data-testid={`tournament-status-${team.id}`}>
+              <span className="font-medium text-foreground">Tournament Status:</span> <span className="text-xl">{tournamentStatusEmoji}</span>
             </p>
           )}
           <p 
