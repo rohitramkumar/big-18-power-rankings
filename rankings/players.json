@@ -8,17 +8,17 @@
   },
   {
     "rank": 2,
-    "name": "Bennett Stirtz",
-    "team": "Iowa",
-    "headshotUrl": "bennett-stirtz.png",
-    "blurb": "Passed first test against Ole Miss playing all 40 minutes and dropping 29 points."
-  },
-  {
-    "rank": 3,
     "name": "Jaxon Kohler",
     "team": "Michigan State",
     "headshotUrl": "jaxon-kohler.png",
     "blurb": "Jeremy Fears Jr. might be the leader of this team, but Jaxon Kohler is the engine."
+  },
+  {
+    "rank": 3,
+    "name": "Bennett Stirtz",
+    "team": "Iowa",
+    "headshotUrl": "bennett-stirtz.png",
+    "blurb": "Struggled against MSU but he will adjust."
   },
   {
     "rank": 4,
