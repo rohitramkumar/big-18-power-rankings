@@ -4,7 +4,7 @@
         "name": "Michigan",
         "logoUrl": "michigan.png",
         "rank": 1,
-        "record": "7-0 (0-0), TRank: 1, KP: 1",
+        "record": "8-0 (1-0), TRank: 1, KP: 1",
         "blurb": "Has anyone seen the front half of the conference schedule for Michigan? In the first 4 games, they get 3 of the teams at the bottom of my power rankings.",
         "tournamentStatus": "lock",
         "trend": 0
@@ -14,7 +14,7 @@
         "name": "Purdue",
         "logoUrl": "purdue.png",
         "rank": 2,
-        "record": "8-0 (1-0), TRank: 5, KP: 2",
+        "record": "8-1 (1-0), TRank: 11, KP: 6",
         "blurb": "Gargantuan tilt against Iowa State coming up. Is this the most anticipated non-conference game at Mackey in the last 20 years?",
         "tournamentStatus": "lock",
         "trend": 0
@@ -24,7 +24,7 @@
         "name": "Michigan State",
         "logoUrl": "michigan-state.png",
         "rank": 3,
-        "record": "8-0 (1-0), TRank: 7, KP: 10",
+        "record": "8-1 (1-0), TRank: 9, KP: 12",
         "blurb": "If you are the second best player on your team against Michigan State, you better show up because they are going to take away your best guy.",
         "tournamentStatus": "lock",
         "trend": 0
@@ -34,7 +34,7 @@
         "name": "Illinois",
         "logoUrl": "illinois.png",
         "rank": 4,
-        "record": "6-2 (0-0), TRank: 14, KP: 17",
+        "record": "7-2 (0-0), TRank: 12, KP: 11",
         "blurb": "This team doesn't really have an identity and that's concerning. Don't really defend that well, don't shoot well and the rebounding the past two weeks has been suspect.",
         "tournamentStatus": "work-to-do",
         "trend": 0
@@ -44,7 +44,7 @@
         "name": "Wisconsin",
         "logoUrl": "wisconsin.png",
         "rank": 5,
-        "record": "6-2 (1-0), TRank: 31, KP: 27",
+        "record": "7-2 (1-0), TRank: 29, KP: 24",
         "blurb": "I'm upset that Illinois never recruited John Blackwell.",
         "tournamentStatus": "work-to-do",
         "trend": 1
@@ -54,7 +54,7 @@
         "name": "Iowa",
         "logoUrl": "iowa.png",
         "rank": 6,
-        "record": "7-1 (0-1), TRank: 27, KP: 32",
+        "record": "8-1 (1-1), TRank: 23, KP: 26",
         "blurb": "The game against MSU was alarming because someone aside from Bennett Stirtz needs to be dependable and that someone doesn't exist right now. Once they figure it out, this team should be fine.",
         "tournamentStatus": "work-to-do",
         "trend": -1
@@ -64,7 +64,7 @@
         "name": "Indiana",
         "logoUrl": "indiana.png",
         "rank": 7,
-        "record": "7-1 (0-1), TRank: 21, KP: 26",
+        "record": "7-2 (0-1), TRank: 24, KP: 28",
         "blurb": "Indiana isn't so good that Tucker DeVries can disappear in conference games.",
         "tournamentStatus": "work-to-do",
         "trend": 0
@@ -74,7 +74,7 @@
         "name": "Nebraska",
         "logoUrl": "nebraska.png",
         "rank": 8,
-        "record": "8-0 (0-0), TRank: 43, KP: 48",
+        "record": "9-0 (0-0), TRank: 35, KP: 42",
         "blurb": "Pryce Sandfort has been a pleasant surprise.",
         "tournamentStatus": "work-to-do",
         "trend": 0
@@ -84,7 +84,7 @@
         "name": "UCLA",
         "logoUrl": "ucla.png",
         "rank": 9,
-        "record": "6-2 (1-0), TRank: 24, KP: 33",
+        "record": "7-2 (2-0), TRank: 22, KP: 30",
         "blurb": "Bit concerning that Mick Cronin had to bench four starters to send a message. This is the one of the oldest teams in the sport...",
         "tournamentStatus": "work-to-do",
         "trend": 2
@@ -94,7 +94,7 @@
         "name": "Washington",
         "logoUrl": "washington.png",
         "rank": 10,
-        "record": "5-3 (0-1), TRank: 60, KP: 59",
+        "record": "6-3 (1-1), TRank: 57, KP: 48",
         "blurb": "Moving this team down for the sole reason that their non-conference schedule is a joke. Being off for 9 days in mid-November makes no sense.",
         "tournamentStatus": "work-to-do",
         "trend": 0
@@ -104,7 +104,7 @@
         "name": "USC",
         "logoUrl": "usc.png",
         "rank": 11,
-        "record": "8-0 (1-0), TRank: 29, KP: 28",
+        "record": "8-1 (1-1), TRank: 31, KP: 32",
         "blurb": "Won the Great Value Maui Invitational but don't think this team has the horses to survive in conference play.",
         "tournamentStatus": "work-to-do",
         "trend": 1
@@ -114,7 +114,7 @@
         "name": "Minnesota",
         "logoUrl": "minnesota.png",
         "rank": 12,
-        "record": "5-4 (1-0), TRank: 92, KP: 108",
+        "record": "5-4 (1-0), TRank: 97, KP: 112",
         "blurb": "Showed a lot of toughness against Indiana. This will probably be a team that struggles on the road but is really good at home.",
         "tournamentStatus": "not-sure",
         "trend": 4
@@ -124,7 +124,7 @@
         "name": "Northwestern",
         "logoUrl": "northwestern.png",
         "rank": 13,
-        "record": "5-3 (0-1), TRank: 62, KP: 55",
+        "record": "5-4 (0-2), TRank: 63, KP: 59",
         "blurb": "Another one of those teams that will probably be tougher to play against when they are at home.",
         "tournamentStatus": "not-sure",
         "trend": -4
@@ -134,7 +134,7 @@
         "name": "Ohio State",
         "logoUrl": "ohio-state.png",
         "rank": 14,
-        "record": "6-1 (0-0), TRank: 26, KP: 37",
+        "record": "7-1 (1-0), TRank: 27, KP: 34",
         "blurb": "Looked very unimpressive in a close win over Notre Dame. Just not seeing the vision this year for this team.",
         "tournamentStatus": "not-sure",
         "trend": -1
@@ -144,7 +144,7 @@
         "name": "Oregon",
         "logoUrl": "oregon.png",
         "rank": 15,
-        "record": "4-4 (0-1), TRank: 63, KP: 83",
+        "record": "4-5 (0-2), TRank: 73, KP: 91",
         "blurb": "Nate Bittle is now hurt. Better get the injuries fully out of the way now before the conference season gets into full swing.",
         "tournamentStatus": "out",
         "trend": -1
@@ -154,7 +154,7 @@
         "name": "Maryland",
         "logoUrl": "maryland.png",
         "rank": 16,
-        "record": "6-3 (0-0), TRank: 100, KP: 92",
+        "record": "6-4 (0-1), TRank: 116, KP: 99",
         "blurb": "Played a tough schedule in Vegas but the defense just got obliterated. Going to be a long year.",
         "tournamentStatus": "out",
         "trend": -1
@@ -164,7 +164,7 @@
         "name": "Penn State",
         "logoUrl": "penn-state.png",
         "rank": 17,
-        "record": "8-1 (0-0), TRank: 91, KP: 94",
+        "record": "8-1 (0-0), TRank: 93, KP: 94",
         "blurb": "Big fan of Kayden Mingo but that's about it.",
         "tournamentStatus": "out",
         "trend": 0
@@ -174,7 +174,7 @@
         "name": "Rutgers",
         "logoUrl": "rutgers.png",
         "rank": 18,
-        "record": "5-4 (0-1), TRank: 137, KP: 127",
+        "record": "5-5 (0-2), TRank: 152, KP: 135",
         "blurb": "Not surprising but a brutal showing in Vegas. I don't see how Pikiell survives this season with his job.",
         "tournamentStatus": "out",
         "trend": 0

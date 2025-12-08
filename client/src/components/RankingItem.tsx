@@ -84,7 +84,7 @@ export default function RankingItem({ team, date, isCurrentRanking = true }: Ran
     >
       <div className="flex gap-4 md:gap-6">
         <div className="flex-shrink-0 flex flex-col items-center gap-4 self-start">
-          <div className="w-[2.25rem] h-[2.25rem] md:w-[2.75rem] md:h-[2.75rem] rounded-md overflow-hidden border border-border bg-card">
+          <div className="w-[2.25rem] h-[2.25rem] md:w-[2.75rem] md:h-[2.75rem] rounded-md overflow-hidden bg-card">
             <img
               src={team.logoUrl}
               alt={`${team.name} logo`}
