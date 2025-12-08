@@ -37,3 +37,18 @@ export const PlayersSchema = z.object({
 });
 
 export type Players = z.infer<typeof PlayersSchema>;
+
+export const VoteStatsSchema = z.object({
+  teamId: z.string(),
+  total: z.number(),
+});
+
+export type VoteStats = z.infer<typeof VoteStatsSchema>;
+
+export const SubmitVoteSchema = z.object({
+  teamId: z.string(),
+  vote: z.enum(['too-high', 'just-right', 'too-low']),
+  date: z.string(),
+});
+
+export type SubmitVote = z.infer<typeof SubmitVoteSchema>;

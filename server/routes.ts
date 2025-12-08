@@ -2,22 +2,9 @@ import { Express } from "express";
 import { createServer, type Server } from "http";
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { TeamSchema, Team, RankingsSchema, PlayerSchema, PlayersSchema } from "../shared/schema";
-
-function extractDateFromFilename(filename: string): string {
-  // Extract date from format like "2025-10-12.json"
-  const match = filename.match(/(\d{4}-\d{2}-\d{2})/);
-  if (match) {
-    const dateStr = match[1];
-    const date = new Date(dateStr);
-    return date.toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-  }
-  return "Unknown";
-}
+import { TeamSchema, Team, PlayersSchema, SubmitVoteSchema, VoteStats, VoteStatsSchema } from "../shared/schema";
+import { db } from "./firestore";
+import { FieldValue } from 'firebase-admin/firestore';
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // API endpoint for rankings
@@ -92,8 +79,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }));
 
       // Trend is calculated offline in the finalize script; do not compute here
-      // Extract date from filename
-      const lastUpdated = extractDateFromFilename(latestRankingFileName);
+      // Extract date from filename (YYYY-MM-DD format without .json)
+      const lastUpdated = latestRankingFileName.replace(/\.json$/, "")
 
       // Return both teams and metadata (teams include optional mvp now)
       const response = {
@@ -148,6 +135,138 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error("Error fetching player rankings:", error);
       res.status(500).json({ error: "Failed to fetch player rankings." });
+    }
+  });
+
+  // API endpoint to submit a vote
+  app.post("/api/votes/submit", async (req, res) => {
+    try {
+      console.log("=== Vote Submission Request ===");
+      console.log("Request body:", JSON.stringify(req.body, null, 2));
+      
+      // Validate the request body
+      const validatedVote = SubmitVoteSchema.parse(req.body);
+      const { teamId, vote, date } = validatedVote;
+      
+      // Get the current latest ranking date
+      const rankingsDir = join(process.cwd(), "rankings");
+      const files = await readdir(rankingsDir);
+      const rankingFiles = files
+        .filter(
+          (file) =>
+            file.endsWith(".json") && !file.startsWith("template") && file !== "mvps.json" && file !== "players.json"
+        )
+        .sort()
+        .reverse();
+      
+      if (rankingFiles.length === 0) {
+        return res.status(400).json({ error: "No current rankings available." });
+      }
+      
+      const latestRankingFileName = rankingFiles[0];
+      const dateMatch = latestRankingFileName.match(/(\d{4}-\d{2}-\d{2})/);
+      const currentDate = dateMatch ? dateMatch[1] : undefined;
+      
+      // Only allow voting on the current/latest rankings
+      if (date !== currentDate) {
+        console.log(`Vote rejected: Attempted to vote on ${date} but current date is ${currentDate}`);
+        return res.status(403).json({ error: "Voting is only allowed for current rankings." });
+      }
+      
+      // Use date as the document ID, store map of teamId -> counter
+      const docRef = db.collection('votes').doc(date);
+      console.log("Document reference path:", docRef.path);
+
+      // Use Firestore transaction to safely increment the counter
+      const result = await db.runTransaction(async (transaction) => {
+        const doc = await transaction.get(docRef);
+        
+        const incrementValue = vote === 'too-low' ? 1 : -1;
+        console.log("Incrementing count by:", incrementValue, "for vote type:", vote);
+        
+        if (!doc.exists) {
+          console.log("Creating new vote document for date:", date);
+          // Create new document with initial map structure
+          const newData = {
+            [teamId]: incrementValue
+          };
+          console.log("New document data:", JSON.stringify(newData, null, 2));
+          transaction.set(docRef, newData);
+          return { created: true, data: newData };
+        } else {
+          console.log("Updating existing vote document for date:", date);
+          const currentData = doc.data() || {};
+          console.log("Current document data:", JSON.stringify(currentData, null, 2));
+          
+          const currentCount = currentData[teamId] || 0;
+          console.log(`Current count for team ${teamId}:`, currentCount);
+          console.log(`New count will be:`, currentCount + incrementValue);
+          
+          // Increment the counter for this specific team
+          transaction.update(docRef, {
+            [teamId]: FieldValue.increment(incrementValue),
+          });
+          return { created: false, previousCount: currentCount };
+        }
+      });
+      
+      console.log("Transaction completed successfully!");
+      console.log("Transaction result:", JSON.stringify(result, null, 2));
+      console.log("=== Vote Submission Complete ===\n");
+
+      res.json({ success: true });
+    } catch (error) {
+      console.error("=== Vote Submission Error ===");
+      console.error("Error submitting vote:", error);
+      console.error("Error stack:", error instanceof Error ? error.stack : 'No stack trace');
+      console.error("=== End Error ===\n");
+      res.status(500).json({ error: "Failed to submit vote." });
+    }
+  });
+
+  // API endpoint to get vote statistics
+  app.get("/api/votes", async (req, res) => {
+    try {
+      const date = req.query.date as string | undefined;
+
+      if (!date) {
+        // If no date provided, return empty array
+        return res.json([]);
+      }
+
+      console.log("=== Fetching vote statistics for date:", date, "===");
+      
+      // Read the document for the given date
+      const docRef = db.collection('votes').doc(date);
+      const doc = await docRef.get();
+
+      if (!doc.exists) {
+        console.log("No vote document found for date:", date);
+        return res.json([]);
+      }
+
+      const data = doc.data();
+      console.log("Raw document data:", JSON.stringify(data, null, 2));
+
+      // Convert the map of teamId -> count into an array of VoteStats
+      const stats: VoteStats[] = [];
+      if (data) {
+        for (const [teamId, total] of Object.entries(data)) {
+          const voteStats = VoteStatsSchema.parse({
+            teamId,
+            total,
+          });
+          stats.push(voteStats);
+        }
+      }
+
+      console.log("Parsed vote stats:", JSON.stringify(stats, null, 2));
+      console.log("=== Returning", stats.length, "vote stats ===\n");
+
+      res.json(stats);
+    } catch (error) {
+      console.error("Error fetching vote stats:", error);
+      res.status(500).json({ error: "Failed to fetch vote stats." });
     }
   });
 

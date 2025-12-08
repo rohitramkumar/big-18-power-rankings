@@ -12,6 +12,16 @@ export default function RankingsList() {
     queryKey: ['/api/archives'],
   });
 
+  // Helper function to format date from YYYY-MM-DD to human readable
+  const formatDate = (dateStr: string) => {
+    const date = new Date(dateStr + 'T00:00:00'); // Add time to avoid timezone issues
+    return date.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+  };
+
   const { data, isLoading, error, refetch } = useQuery<Rankings>({
     queryKey: ['/api/rankings', selectedArchive],
     queryFn: async () => {
@@ -75,11 +85,6 @@ export default function RankingsList() {
     <div className="space-y-6 md:space-y-8" data-testid="rankings-list">
       {/* Archive selector */}
       <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
-        {lastUpdated && (
-          <p className="text-sm text-muted-foreground">
-            Last updated: <span className="font-semibold text-foreground">{lastUpdated}</span>
-          </p>
-        )}
         <div className="flex items-center gap-2">
           <span className="text-sm text-muted-foreground">Viewing:</span>
           <select
@@ -92,41 +97,18 @@ export default function RankingsList() {
               void refetch();
             }}
           >
-            <option value="">Latest</option>
+            <option value="">{lastUpdated ? formatDate(lastUpdated) : "Latest"}</option>
             {archives?.map((a) => (
               <option key={a} value={a}>
-                {a}
+                {formatDate(a)}
               </option>
             ))}
           </select>
         </div>
       </div>
-      
-      {/* Tournament Status Legend */}
-      <Card className="p-4 bg-muted/30">
-        <h3 className="text-sm font-semibold mb-3">NCAA Tournament Status Legend</h3>
-        <div className="flex flex-wrap items-center gap-4 text-sm">
-          <div className="flex items-center gap-2">
-            <span className="text-xl">🔒</span>
-            <span className="text-muted-foreground">Lock</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-xl">👷</span>
-            <span className="text-muted-foreground">Work to Do</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-xl">🤔</span>
-            <span className="text-muted-foreground">Not Sure</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-xl">☠️</span>
-            <span className="text-muted-foreground">Out</span>
-          </div>
-        </div>
-      </Card>
 
       {rankings.map((team) => (
-        <RankingItem key={team.id} team={team} />
+        <RankingItem key={team.id} team={team} date={selectedArchive || lastUpdated} isCurrentRanking={!selectedArchive} />
       ))}
     </div>
   );

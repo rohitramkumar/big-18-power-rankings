@@ -5,7 +5,8 @@
         "logoUrl": "michigan-state.png",
         "rank": 1,
         "record": "2-0 (0-0)",
-        "blurb": "This is probably going to be a top 5 team in the country in January and people are going to be scratching their heads as to how that is possible."
+        "blurb": "This is probably going to be a top 5 team in the country in January and people are going to be scratching their heads as to how that is possible.",
+        "trend": 0
     },
     {
         "id": "ill",
@@ -13,7 +14,8 @@
         "logoUrl": "illinois.png",
         "rank": 2,
         "record": "3-0 (0-0)",
-        "blurb": "Top 3 roster in the sport. However, the best ability is availability."
+        "blurb": "Top 3 roster in the sport. However, the best ability is availability.",
+        "trend": 0
     },
     {
         "id": "pur",
@@ -21,7 +23,8 @@
         "logoUrl": "purdue.png",
         "rank": 3,
         "record": "2-0 (0-0)",
-        "blurb": "Braden Smith + TKR + Loyer gives you a hell of a floor but this team lacks an X-factor."
+        "blurb": "Braden Smith + TKR + Loyer gives you a hell of a floor but this team lacks an X-factor.",
+        "trend": 0
     },
     {
         "id": "wis",
@@ -29,7 +32,8 @@
         "logoUrl": "wisconsin.png",
         "rank": 4,
         "record": "3-0 (0-0)",
-        "blurb": "Not a flashy roster but I'd put money on a top 4 conference finish."
+        "blurb": "Not a flashy roster but I'd put money on a top 4 conference finish.",
+        "trend": 0
     },
     {
         "id": "iowa",
@@ -37,7 +41,8 @@
         "logoUrl": "iowa.png",
         "rank": 5,
         "record": "2-0 (0-0)",
-        "blurb": "Bennet Stirtz is my darkhorse B10 POY if Braden Smith slips up."
+        "blurb": "Bennet Stirtz is my darkhorse B10 POY if Braden Smith slips up.",
+        "trend": 0
     },
     {
         "id": "mich",
@@ -45,7 +50,8 @@
         "logoUrl": "michigan.png",
         "rank": 6,
         "record": "2-0 (0-0)",
-        "blurb": "Dusty May could be potentially wasting away the best frontcourt in the country by not getting a stud PG in the portal. Yes, I know Elliot Cadeau exists."
+        "blurb": "Dusty May could be potentially wasting away the best frontcourt in the country by not getting a stud PG in the portal. Yes, I know Elliot Cadeau exists.",
+        "trend": 0
     },
     {
         "id": "ind",
@@ -61,7 +67,8 @@
         "logoUrl": "ucla.png",
         "rank": 8,
         "record": "3-0 (0-0)",
-        "blurb": "Over/under on the Mick Cronin postgame interview eruptions this year is 6."
+        "blurb": "Over/under on the Mick Cronin postgame interview eruptions this year is 6.",
+        "trend": 0
     },
     {
         "id": "wash",
@@ -69,7 +76,8 @@
         "logoUrl": "washington.png",
         "rank": 9,
         "record": "2-1 (0-0)",
-        "blurb": "Danny Sprinkle finally has some expectations at the high major level. Can he deliver?"
+        "blurb": "Danny Sprinkle finally has some expectations at the high major level. Can he deliver?",
+        "trend": 0
     },
     {
         "id": "usc",
@@ -77,7 +85,8 @@
         "logoUrl": "usc.png",
         "rank": 10,
         "record": "2-0 (0-0)",
-        "blurb": "I have zero clue what to think about this team."
+        "blurb": "I have zero clue what to think about this team.",
+        "trend": 0
     },
     {
         "id": "nu",
@@ -85,7 +94,8 @@
         "logoUrl": "northwestern.png",
         "rank": 11,
         "record": "3-0 (0-0)",
-        "blurb": "This is a solid roster with the best coach in the conference (my opinion). Who will step up outside of Nick Martinelli is the million-dollar question."
+        "blurb": "This is a solid roster with the best coach in the conference (my opinion). Who will step up outside of Nick Martinelli is the million-dollar question.",
+        "trend": 0
     },
     {
         "id": "ore",
@@ -93,7 +103,8 @@
         "logoUrl": "oregon.png",
         "rank": 12,
         "record": "3-0 (0-0)",
-        "blurb": "Jackson Shelstad is possibly the most valuable player in the conference because this team has looked god awful without him."
+        "blurb": "Jackson Shelstad is possibly the most valuable player in the conference because this team has looked god awful without him.",
+        "trend": 0
     },
     {
         "id": "neb",
@@ -101,7 +112,8 @@
         "logoUrl": "nebraska.png",
         "rank": 13,
         "record": "3-0 (0-0)",
-        "blurb": "The natives in Lincoln are going to start to get restless if this team fails to make the tournament."
+        "blurb": "The natives in Lincoln are going to start to get restless if this team fails to make the tournament.",
+        "trend": 0
     },
     {
         "id": "osu",
@@ -109,7 +121,8 @@
         "logoUrl": "ohio-state.png",
         "rank": 14,
         "record": "3-0 (0-0)",
-        "blurb": "This team has some pieces but will Diebler get his team to overachieve for once?"
+        "blurb": "This team has some pieces but will Diebler get his team to overachieve for once?",
+        "trend": 0
     },
     {
         "id": "minn",
@@ -117,7 +130,8 @@
         "logoUrl": "minnesota.png",
         "rank": 15,
         "record": "2-1 (0-0)",
-        "blurb": "Niko Medved needs time. See if you can ride Cade Tyson to a solid finish and maybe finally recruit some players from the state?"
+        "blurb": "Niko Medved needs time. See if you can ride Cade Tyson to a solid finish and maybe finally recruit some players from the state?",
+        "trend": 0
     },
     {
         "id": "md",
@@ -125,7 +139,8 @@
         "logoUrl": "maryland.png",
         "rank": 16,
         "record": "2-1 (0-0)",
-        "blurb": "Will be a bit tough to watch offensively this year. However, will probably beat Illinois by double digits."
+        "blurb": "Will be a bit tough to watch offensively this year. However, will probably beat Illinois by double digits.",
+        "trend": 0
     },
     {
         "id": "psu",
@@ -133,7 +148,8 @@
         "logoUrl": "penn-state.png",
         "rank": 17,
         "record": "3-0 (0-0)",
-        "blurb": "Big fan of Kayden Mingo but that's about it."
+        "blurb": "Big fan of Kayden Mingo but that's about it.",
+        "trend": 0
     },
     {
         "id": "ru",
@@ -141,6 +157,7 @@
         "logoUrl": "rutgers.png",
         "rank": 18,
         "record": "2-0 (0-0)",
-        "blurb": "This roster is..yikes. Pikiell should firmly be on the hot seat."
+        "blurb": "This roster is..yikes. Pikiell should firmly be on the hot seat.",
+        "trend": 0
     }
 ]
