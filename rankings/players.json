@@ -23,17 +23,17 @@
     },
     {
       "rank": 4,
-      "name": "Trey Kaufman-Renn",
-      "team": "Purdue",
-      "headshotUrl": "trey-kaufman-renn.png",
-      "blurb": "Really nice game at Alabama."
-    },
-    {
-      "rank": 5,
       "name": "Yaxel Lendeborg",
       "team": "Michigan",
       "headshotUrl": "yaxel-lendeborg.png",
       "blurb": "Will be unguardable if he can shoot close to 40% from three."
+    },
+    {
+      "rank": 5,
+      "name": "Trey Kaufman-Renn",
+      "team": "Purdue",
+      "headshotUrl": "trey-kaufman-renn.png",
+      "blurb": "Tough game against Iowa State but still an elite player in this conference."
     }
   ],
   "honorableMentions": [{"name": "Jeremy Fears Jr."}, {"name": "Kylan Boswell"}, {"name": "John Blackwell"}]
