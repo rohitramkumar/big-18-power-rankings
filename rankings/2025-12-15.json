@@ -1,0 +1,182 @@
+[
+    {
+        "id": "mich",
+        "name": "Michigan",
+        "logoUrl": "michigan.png",
+        "rank": 1,
+        "record": "10-0 (2-0), TRank: 1, KP: 1",
+        "blurb": "Has anyone seen the front half of the conference schedule for Michigan? In the first 4 games, they get 3 of the teams at the bottom of my power rankings.",
+        "tournamentStatus": "lock",
+        "trend": 0
+    },
+    {
+        "id": "pur",
+        "name": "Purdue",
+        "logoUrl": "purdue.png",
+        "rank": 2,
+        "record": "10-1 (2-0), TRank: 9, KP: 6",
+        "blurb": "Saw Purdue was up 3 at half to Minnesota, decided to take a shower and came back to find they were up 20.",
+        "tournamentStatus": "lock",
+        "trend": 0
+    },
+    {
+        "id": "msu",
+        "name": "Michigan State",
+        "logoUrl": "michigan-state.png",
+        "rank": 3,
+        "record": "9-1 (2-0), TRank: 11, KP: 12",
+        "blurb": "Fans seem to hate the rotations Izzo put out against Penn State but they found a way to win and seemed to have unlocked another scorer in the process?",
+        "tournamentStatus": "lock",
+        "trend": 0
+    },
+    {
+        "id": "ill",
+        "name": "Illinois",
+        "logoUrl": "illinois.png",
+        "rank": 4,
+        "record": "8-3 (1-1), TRank: 13, KP: 14",
+        "blurb": "If you are a big time scorer, you want to see Illinois on the schedule.",
+        "tournamentStatus": "work-to-do",
+        "trend": 0
+    },
+    {
+        "id": "wis",
+        "name": "Wisconsin",
+        "logoUrl": "wisconsin.png",
+        "rank": 5,
+        "record": "7-3 (1-1), TRank: 37, KP: 38",
+        "blurb": "I'm upset that Illinois never recruited John Blackwell.",
+        "tournamentStatus": "work-to-do",
+        "trend": 0
+    },
+    {
+        "id": "iowa",
+        "name": "Iowa",
+        "logoUrl": "iowa.png",
+        "rank": 6,
+        "record": "8-2 (1-1), TRank: 23, KP: 22",
+        "blurb": "The game against MSU was alarming because someone aside from Bennett Stirtz needs to be dependable and that someone doesn't exist right now. Once they figure it out, this team should be fine.",
+        "tournamentStatus": "work-to-do",
+        "trend": 0
+    },
+    {
+        "id": "neb",
+        "name": "Nebraska",
+        "logoUrl": "nebraska.png",
+        "rank": 7,
+        "record": "11-0 (2-0), TRank: 22, KP: 20",
+        "blurb": "Pryce Sandfort looked like the second coming of Drazen Petrovic against Illinois (pun intended).",
+        "tournamentStatus": "work-to-do",
+        "trend": 1
+    },
+    {
+        "id": "ind",
+        "name": "Indiana",
+        "logoUrl": "indiana.png",
+        "rank": 8,
+        "record": "8-3 (1-1), TRank: 19, KP: 26",
+        "blurb": "Indiana isn't so good that Tucker DeVries can disappear in conference games.",
+        "tournamentStatus": "work-to-do",
+        "trend": -1
+    },
+    {
+        "id": "ucla",
+        "name": "UCLA",
+        "logoUrl": "ucla.png",
+        "rank": 9,
+        "record": "7-3 (2-0), TRank: 25, KP: 31",
+        "blurb": "Bit concerning that Mick Cronin had to bench four starters to send a message. This is the one of the oldest teams in the sport...",
+        "tournamentStatus": "work-to-do",
+        "trend": 0
+    },
+    {
+        "id": "wash",
+        "name": "Washington",
+        "logoUrl": "washington.png",
+        "rank": 10,
+        "record": "7-3 (1-1), TRank: 56, KP: 47",
+        "blurb": "Moving this team down for the sole reason that their non-conference schedule is a joke. Being off for 9 days in mid-November makes no sense.",
+        "tournamentStatus": "work-to-do",
+        "trend": 0
+    },
+    {
+        "id": "usc",
+        "name": "USC",
+        "logoUrl": "usc.png",
+        "rank": 11,
+        "record": "9-1 (1-1), TRank: 33, KP: 36",
+        "blurb": "Won the Great Value Maui Invitational but don't think this team has the horses to survive in conference play.",
+        "tournamentStatus": "work-to-do",
+        "trend": 0
+    },
+    {
+        "id": "minn",
+        "name": "Minnesota",
+        "logoUrl": "minnesota.png",
+        "rank": 12,
+        "record": "5-5 (1-1), TRank: 98, KP: 118",
+        "blurb": "Showed a lot of toughness against Indiana. This will probably be a team that struggles on the road but is really good at home.",
+        "tournamentStatus": "not-sure",
+        "trend": 0
+    },
+    {
+        "id": "nu",
+        "name": "Northwestern",
+        "logoUrl": "northwestern.png",
+        "rank": 13,
+        "record": "6-4 (0-2), TRank: 58, KP: 58",
+        "blurb": "Another one of those teams that will probably be tougher to play against when they are at home.",
+        "tournamentStatus": "not-sure",
+        "trend": 0
+    },
+    {
+        "id": "osu",
+        "name": "Ohio State",
+        "logoUrl": "ohio-state.png",
+        "rank": 14,
+        "record": "8-2 (1-1), TRank: 32, KP: 39",
+        "blurb": "Looking like they were dead against West Virginia and NCAA tournament hopes hanging in the balance, they get off the mat and somehow win. Stayin alive..",
+        "tournamentStatus": "not-sure",
+        "trend": 0
+    },
+    {
+        "id": "ore",
+        "name": "Oregon",
+        "logoUrl": "oregon.png",
+        "rank": 15,
+        "record": "5-5 (0-2), TRank: 59, KP: 84",
+        "blurb": "Just as Dana Altman feels the team may be turning a corner, they get Gonzaga. Could be a humbling experience.",
+        "tournamentStatus": "out",
+        "trend": 0
+    },
+    {
+        "id": "md",
+        "name": "Maryland",
+        "logoUrl": "maryland.png",
+        "rank": 16,
+        "record": "6-5 (0-2), TRank: 117, KP: 101",
+        "blurb": "Once again Pharrel Payne goes down and this time it looks serious.",
+        "tournamentStatus": "out",
+        "trend": 0
+    },
+    {
+        "id": "psu",
+        "name": "Penn State",
+        "logoUrl": "penn-state.png",
+        "rank": 17,
+        "record": "8-3 (0-2), TRank: 102, KP: 108",
+        "blurb": "Big fan of Kayden Mingo but that's about it.",
+        "tournamentStatus": "out",
+        "trend": 0
+    },
+    {
+        "id": "ru",
+        "name": "Rutgers",
+        "logoUrl": "rutgers.png",
+        "rank": 18,
+        "record": "5-6 (0-2), TRank: 176, KP: 145",
+        "blurb": "Steve Pikiell's time seems to be coming to an end. Really sad.",
+        "tournamentStatus": "out",
+        "trend": 0
+    }
+]
