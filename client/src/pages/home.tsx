@@ -14,9 +14,9 @@ export default function Home() {
           <button
             onClick={() => setShowPlayers(false)}
             className={`px-4 py-2 rounded-md font-semibold transition-colors ${
-              showPlayers
-                ? "bg-transparent text-foreground border border-border hover:bg-muted"
-                : "bg-primary text-primary-foreground hover:bg-primary/90"
+              !showPlayers
+                ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                : "bg-transparent text-foreground border border-border hover:bg-muted"
             }`}
           >
             Team Rankings

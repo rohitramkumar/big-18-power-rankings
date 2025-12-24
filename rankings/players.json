@@ -15,18 +15,18 @@
       "blurb": "Jeremy Fears Jr. might be the leader of this team, but Jaxon Kohler is the engine."
     },
     {
-      "rank": 3,
-      "name": "Bennett Stirtz",
-      "team": "Iowa",
-      "headshotUrl": "bennett-stirtz.png",
-      "blurb": "Struggled against MSU but he will adjust."
-    },
-    {
       "rank": 4,
       "name": "Yaxel Lendeborg",
       "team": "Michigan",
       "headshotUrl": "yaxel-lendeborg.png",
       "blurb": "Will be unguardable if he can shoot close to 40% from three."
+    },
+    {
+      "rank": 4,
+      "name": "Bennett Stirtz",
+      "team": "Iowa",
+      "headshotUrl": "bennett-stirtz.png",
+      "blurb": "Struggled against MSU but he will adjust."
     },
     {
       "rank": 5,
@@ -36,5 +36,44 @@
       "blurb": "Tough game against Iowa State but still an elite player in this conference."
     }
   ],
-  "honorableMentions": [{"name": "Jeremy Fears Jr."}, {"name": "Kylan Boswell"}, {"name": "John Blackwell"}, {"name": "Bruce Thornton"}]
+  "honorableMentions": [{"name": "Jeremy Fears Jr."}, {"name": "Kylan Boswell"}, {"name": "Reink Mast"}, {"name": "Bruce Thornton"}],
+  "freshmen": {
+    "top": [
+      {
+        "rank": 1,
+        "name": "Keaton Wagler",
+        "team": "Illinois",
+        "headshotUrl": "keaton-wagler.png",
+        "blurb": ""
+      },
+      {
+        "rank": 2,
+        "name": "David Mirkovic",
+        "team": "Illinois",
+        "headshotUrl": "david-mirkovic.png",
+        "blurb": ""
+      },
+      {
+        "rank": 3,
+        "name": "Hannes Steinbach",
+        "team": "Washington",
+        "headshotUrl": "hannes-steinbach.png",
+        "blurb": ""
+      },
+      {
+        "rank": 4,
+        "name": "Trey McKenney",
+        "team": "Michigan",
+        "headshotUrl": "trey-mckenney.png",
+        "blurb": ""
+      },
+      {
+        "rank": 5,
+        "name": "Kayden Mingo",
+        "team": "Penn State",
+        "headshotUrl": "kayden-mingo.png",
+        "blurb": ""
+      }
+    ]
+  }
 }

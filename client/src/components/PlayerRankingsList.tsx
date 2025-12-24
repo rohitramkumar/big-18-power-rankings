@@ -109,6 +109,50 @@ export default function PlayerRankingsList() {
           </Card>
         </div>
       )}
+
+      {/* Freshman Rankings Section */}
+      {players.freshmen && (
+        <>
+          <div className="space-y-4">
+            {players.freshmen.top.map((player) => (
+              <Card
+                key={player.rank}
+                className="p-4 md:p-6 hover-elevate"
+                data-testid={`freshman-item-${player.rank}`}
+              >
+                <div className="flex gap-4 md:gap-6 items-start">
+                  <div className="flex-shrink-0 flex flex-col items-center gap-2">
+                    <div className="text-4xl md:text-5xl font-bold text-primary">
+                      {player.rank}
+                    </div>
+                  </div>
+
+                  {player.headshotUrl && (
+                    <img
+                      src={player.headshotUrl}
+                      alt={`${player.name} headshot`}
+                      className="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 rounded-md object-cover border border-border"
+                      data-testid={`freshman-headshot-${player.rank}`}
+                    />
+                  )}
+
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg md:text-xl font-semibold mb-1">
+                      {player.name}
+                    </h3>
+                    <p className="text-sm font-medium text-muted-foreground mb-2">
+                      {player.team}
+                    </p>
+                    <p className="text-base leading-relaxed text-muted-foreground">
+                      {player.blurb}
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 }

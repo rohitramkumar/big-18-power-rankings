@@ -31,9 +31,17 @@ export const PlayerSchema = z.object({
 
 export type Player = z.infer<typeof PlayerSchema>;
 
+export const FreshmenRankingsSchema = z.object({
+  top: z.array(PlayerSchema),
+  honorableMentions: z.array(PlayerSchema).optional(),
+});
+
+export type FreshmenRankings = z.infer<typeof FreshmenRankingsSchema>;
+
 export const PlayersSchema = z.object({
   top: z.array(PlayerSchema),
   honorableMentions: z.array(PlayerSchema),
+  freshmen: FreshmenRankingsSchema,
 });
 
 export type Players = z.infer<typeof PlayersSchema>;

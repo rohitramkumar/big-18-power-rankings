@@ -1,0 +1,182 @@
+[
+    {
+        "id": "mich",
+        "name": "Michigan",
+        "logoUrl": "michigan.png",
+        "rank": 1,
+        "record": "11-0 (2-0), TRank: 1, KP: 1",
+        "blurb": "Gave up 83 to Maryland and still maintained #1 spot in KenPom defense effeciency. They are a full 2 points better than the next team right now in that statistic.",
+        "tournamentStatus": "lock",
+        "trend": 0
+    },
+    {
+        "id": "pur",
+        "name": "Purdue",
+        "logoUrl": "purdue.png",
+        "rank": 2,
+        "record": "11-1 (2-0), TRank: 9, KP: 5",
+        "blurb": "Did what they were supposed to do against Auburn and now the conference schedule sets up very nicely for a run.",
+        "tournamentStatus": "lock",
+        "trend": 0
+    },
+    {
+        "id": "msu",
+        "name": "Michigan State",
+        "logoUrl": "michigan-state.png",
+        "rank": 3,
+        "record": "11-1 (2-0), TRank: 12, KP: 13",
+        "blurb": "When you play Oakland, you just have to get out of there with a win.",
+        "tournamentStatus": "lock",
+        "trend": 0
+    },
+    {
+        "id": "ill",
+        "name": "Illinois",
+        "logoUrl": "illinois.png",
+        "rank": 4,
+        "record": "9-3 (1-1), TRank: 10, KP: 9",
+        "blurb": "Similar to Purdue, conference schedule sets up nicely in the next month for a big run.",
+        "tournamentStatus": "work-to-do",
+        "trend": 0
+    },
+    {
+        "id": "iowa",
+        "name": "Iowa",
+        "logoUrl": "iowa.png",
+        "rank": 5,
+        "record": "10-2 (1-1), TRank: 18, KP: 18",
+        "blurb": "The game against MSU was alarming because someone aside from Bennett Stirtz needs to be dependable and that someone doesn't exist right now. Once they figure it out, this team should be fine.",
+        "tournamentStatus": "work-to-do",
+        "trend": 1
+    },
+    {
+        "id": "neb",
+        "name": "Nebraska",
+        "logoUrl": "nebraska.png",
+        "rank": 6,
+        "record": "12-0 (2-0), TRank: 23, KP: 22",
+        "blurb": "Pryce Sandfort looked like the second coming of Drazen Petrovic against Illinois (pun intended).",
+        "tournamentStatus": "work-to-do",
+        "trend": 1
+    },
+    {
+        "id": "wis",
+        "name": "Wisconsin",
+        "logoUrl": "wisconsin.png",
+        "rank": 7,
+        "record": "8-4 (1-1), TRank: 48, KP: 43",
+        "blurb": "The trio of Boyd-Blackwell-Winter is pretty good but what's behind that is terrible.",
+        "tournamentStatus": "work-to-do",
+        "trend": -2
+    },
+    {
+        "id": "ind",
+        "name": "Indiana",
+        "logoUrl": "indiana.png",
+        "rank": 8,
+        "record": "10-3 (1-1), TRank: 19, KP: 31",
+        "blurb": "Indiana isn't so good that Tucker DeVries can disappear in conference games.",
+        "tournamentStatus": "work-to-do",
+        "trend": 0
+    },
+    {
+        "id": "ucla",
+        "name": "UCLA",
+        "logoUrl": "ucla.png",
+        "rank": 9,
+        "record": "10-3 (2-0), TRank: 28, KP: 32",
+        "blurb": "Bit concerning that Mick Cronin had to bench four starters to send a message. This is the one of the oldest teams in the sport...",
+        "tournamentStatus": "work-to-do",
+        "trend": 0
+    },
+    {
+        "id": "wash",
+        "name": "Washington",
+        "logoUrl": "washington.png",
+        "rank": 10,
+        "record": "8-4 (1-1), TRank: 51, KP: 47",
+        "blurb": "Looking more an more like Danny Sprinkle is going to squander a really good roster.",
+        "tournamentStatus": "work-to-do",
+        "trend": 0
+    },
+    {
+        "id": "osu",
+        "name": "Ohio State",
+        "logoUrl": "ohio-state.png",
+        "rank": 11,
+        "record": "9-3 (1-1), TRank: 36, KP: 34",
+        "blurb": "Devastating loss to UNC but good metrics will continue to let this team hang around. Looking like 12 conference wins will get them into the dance.",
+        "tournamentStatus": "not-sure",
+        "trend": 3
+    },
+    {
+        "id": "usc",
+        "name": "USC",
+        "logoUrl": "usc.png",
+        "rank": 12,
+        "record": "12-1 (1-1), TRank: 37, KP: 38",
+        "blurb": "Rodney Rice being out for the year hurts big time and no mid-season transfer is going to change that.",
+        "tournamentStatus": "not-sure",
+        "trend": -1
+    },
+    {
+        "id": "minn",
+        "name": "Minnesota",
+        "logoUrl": "minnesota.png",
+        "rank": 13,
+        "record": "7-5 (1-1), TRank: 87, KP: 100",
+        "blurb": "I think this team has enough talent to have squeaked their way into the tournament but the non-conference schedule is just too bad.",
+        "tournamentStatus": "out",
+        "trend": -1
+    },
+    {
+        "id": "nu",
+        "name": "Northwestern",
+        "logoUrl": "northwestern.png",
+        "rank": 14,
+        "record": "7-5 (0-2), TRank: 63, KP: 54",
+        "blurb": "The pieces around Nick Martinelli have not materialized and time is running out.",
+        "tournamentStatus": "out",
+        "trend": -1
+    },
+    {
+        "id": "ore",
+        "name": "Oregon",
+        "logoUrl": "oregon.png",
+        "rank": 15,
+        "record": "6-6 (0-2), TRank: 65, KP: 74",
+        "blurb": "Showed lots of fight against Gonzaga but that was a game they needed if they had any hopes of making the tournament. Even going 12-8 in conference play may not be enough.",
+        "tournamentStatus": "out",
+        "trend": 0
+    },
+    {
+        "id": "md",
+        "name": "Maryland",
+        "logoUrl": "maryland.png",
+        "rank": 16,
+        "record": "6-6 (0-2), TRank: 121, KP: 101",
+        "blurb": "Once again Pharrel Payne goes down and this time it looks serious.",
+        "tournamentStatus": "out",
+        "trend": 0
+    },
+    {
+        "id": "psu",
+        "name": "Penn State",
+        "logoUrl": "penn-state.png",
+        "rank": 17,
+        "record": "8-4 (0-2), TRank: 130, KP: 128",
+        "blurb": "Illinois, Michigan and Purdue coming up. Total spread in those games might be close to 100?",
+        "tournamentStatus": "out",
+        "trend": 0
+    },
+    {
+        "id": "ru",
+        "name": "Rutgers",
+        "logoUrl": "rutgers.png",
+        "rank": 18,
+        "record": "6-6 (0-2), TRank: 194, KP: 159",
+        "blurb": "Needed a prayer to beat UPenn at home. Embarrassing.",
+        "tournamentStatus": "out",
+        "trend": 0
+    }
+]
