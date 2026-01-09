@@ -1,0 +1,182 @@
+[
+    {
+        "id": "mich",
+        "name": "Michigan",
+        "logoUrl": "michigan.png",
+        "rank": 1,
+        "record": "14-0 (4-0), TRank: 1, KP: 1",
+        "blurb": "Looked slightly human against Penn State but don't see them getting a challenge until Nebraska on Jan 27.",
+        "tournamentStatus": "lock",
+        "trend": 0
+    },
+    {
+        "id": "pur",
+        "name": "Purdue",
+        "logoUrl": "purdue.png",
+        "rank": 2,
+        "record": "14-1 (4-0), TRank: 2, KP: 4",
+        "blurb": "Continuing to stack wins in a very workmanlike fashion. Nothing flashy but getting the job done.",
+        "tournamentStatus": "lock",
+        "trend": 0
+    },
+    {
+        "id": "msu",
+        "name": "Michigan State",
+        "logoUrl": "michigan-state.png",
+        "rank": 3,
+        "record": "14-2 (4-1), TRank: 13, KP: 12",
+        "blurb": "Jaxon Kohler is shooting over 50% from three!",
+        "tournamentStatus": "lock",
+        "trend": 0
+    },
+    {
+        "id": "ill",
+        "name": "Illinois",
+        "logoUrl": "illinois.png",
+        "rank": 4,
+        "record": "12-3 (3-1), TRank: 7, KP: 9",
+        "blurb": "Defense has gotten back on track since Nebraska but can they prevent Bennett Stirtz from going for 30?",
+        "tournamentStatus": "lock",
+        "trend": 0
+    },
+    {
+        "id": "neb",
+        "name": "Nebraska",
+        "logoUrl": "nebraska.png",
+        "rank": 5,
+        "record": "15-0 (4-0), TRank: 21, KP: 21",
+        "blurb": "Braden Frager has emerged as a potential third option scoring wise and that is a big development.",
+        "tournamentStatus": "lock",
+        "trend": 1
+    },
+    {
+        "id": "iowa",
+        "name": "Iowa",
+        "logoUrl": "iowa.png",
+        "rank": 6,
+        "record": "12-3 (2-2), TRank: 20, KP: 19",
+        "blurb": "The game against Minnesota was lost when Stirtz was on the bench with foul trouble. It's an obvious statement but they aren't very good without him.",
+        "tournamentStatus": "work-to-do",
+        "trend": -1
+    },
+    {
+        "id": "wis",
+        "name": "Wisconsin",
+        "logoUrl": "wisconsin.png",
+        "rank": 7,
+        "record": "10-5 (2-2), TRank: 42, KP: 42",
+        "blurb": "The trio of Boyd-Blackwell-Winter is pretty good but what's behind that is terrible.",
+        "tournamentStatus": "work-to-do",
+        "trend": 0
+    },
+    {
+        "id": "ind",
+        "name": "Indiana",
+        "logoUrl": "indiana.png",
+        "rank": 8,
+        "record": "12-3 (3-1), TRank: 19, KP: 24",
+        "blurb": "Indiana isn't so good that Tucker DeVries can disappear in conference games.",
+        "tournamentStatus": "work-to-do",
+        "trend": 0
+    },
+    {
+        "id": "ucla",
+        "name": "UCLA",
+        "logoUrl": "ucla.png",
+        "rank": 9,
+        "record": "10-5 (2-2), TRank: 43, KP: 39",
+        "blurb": "Will Mick Cronin ever get his guys to show up on the road?",
+        "tournamentStatus": "work-to-do",
+        "trend": 0
+    },
+    {
+        "id": "wash",
+        "name": "Washington",
+        "logoUrl": "washington.png",
+        "rank": 10,
+        "record": "9-6 (1-3), TRank: 54, KP: 48",
+        "blurb": "Looking more an more like Danny Sprinkle is going to squander a really good roster.",
+        "tournamentStatus": "not-sure",
+        "trend": 0
+    },
+    {
+        "id": "osu",
+        "name": "Ohio State",
+        "logoUrl": "ohio-state.png",
+        "rank": 11,
+        "record": "11-4 (3-2), TRank: 40, KP: 36",
+        "blurb": "Christoph Tilly has been a major disappointment.",
+        "tournamentStatus": "not-sure",
+        "trend": 0
+    },
+    {
+        "id": "minn",
+        "name": "Minnesota",
+        "logoUrl": "minnesota.png",
+        "rank": 12,
+        "record": "10-5 (3-1), TRank: 67, KP: 85",
+        "blurb": "Frankly surprised that this team was able to close down the win against Iowa. Not sure a Ben Johnson coached team gets that done..",
+        "tournamentStatus": "not-sure",
+        "trend": 1
+    },
+    {
+        "id": "nu",
+        "name": "Northwestern",
+        "logoUrl": "northwestern.png",
+        "rank": 13,
+        "record": "8-7 (0-4), TRank: 57, KP: 57",
+        "blurb": "The pieces around Nick Martinelli have not materialized and time is running out.",
+        "tournamentStatus": "out",
+        "trend": 1
+    },
+    {
+        "id": "usc",
+        "name": "USC",
+        "logoUrl": "usc.png",
+        "rank": 14,
+        "record": "12-3 (1-3), TRank: 56, KP: 47",
+        "blurb": "Muss couldn't get out of the state of Michigan fast enough.",
+        "tournamentStatus": "not-sure",
+        "trend": -2
+    },
+    {
+        "id": "ore",
+        "name": "Oregon",
+        "logoUrl": "oregon.png",
+        "rank": 15,
+        "record": "8-8 (1-4), TRank: 86, KP: 83",
+        "blurb": "",
+        "tournamentStatus": "out",
+        "trend": 0
+    },
+    {
+        "id": "psu",
+        "name": "Penn State",
+        "logoUrl": "penn-state.png",
+        "rank": 16,
+        "record": "9-6 (0-4), TRank: 119, KP: 110",
+        "blurb": "Didn't get the results they wanted recently but showed they will not get punked at home.",
+        "tournamentStatus": "out",
+        "trend": 1
+    },
+    {
+        "id": "md",
+        "name": "Maryland",
+        "logoUrl": "maryland.png",
+        "rank": 17,
+        "record": "7-8 (0-4), TRank: 124, KP: 115",
+        "blurb": "Next years recruiting class can't come soon enough.",
+        "tournamentStatus": "out",
+        "trend": -1
+    },
+    {
+        "id": "ru",
+        "name": "Rutgers",
+        "logoUrl": "rutgers.png",
+        "rank": 18,
+        "record": "8-8 (1-4), TRank: 186, KP: 158",
+        "blurb": "Need a fresh start at head coach. The offensive philosophy is well overdue for a change.",
+        "tournamentStatus": "out",
+        "trend": 0
+    }
+]
