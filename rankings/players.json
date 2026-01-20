@@ -36,7 +36,7 @@
       "blurb": "Putting up some crazy scoring numbers. Shame he doesn't have a good team around him."
     }
   ],
-  "honorableMentions": [{"name": "Trey Kaufmann-Renn"}, {"name": "Kylan Boswell"}, {"name": "Reink Mast"}, {"name": "Bruce Thornton"}],
+  "honorableMentions": [{"name": "Kylan Boswell"}, {"name": "Reink Mast"}, {"name": "Bruce Thornton"}, {"name": "Jeremy Fears Jr."}],
   "freshmen": {
     "top": [
       {
@@ -60,18 +60,18 @@
         "headshotUrl": "hannes-steinbach.png",
         "blurb": ""
       },
-      {
+        {
         "rank": 4,
-        "name": "Trey McKenney",
-        "team": "Michigan",
-        "headshotUrl": "trey-mckenney.png",
+        "name": "Braden Frager",
+        "team": "Nebraska",
+        "headshotUrl": "braden-frager.png",
         "blurb": ""
       },
       {
         "rank": 5,
-        "name": "Kayden Mingo",
-        "team": "Penn State",
-        "headshotUrl": "kayden-mingo.png",
+        "name": "Trey McKenney",
+        "team": "Michigan",
+        "headshotUrl": "trey-mckenney.png",
         "blurb": ""
       }
     ]
