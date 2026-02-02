@@ -2,41 +2,41 @@
   "top": [
     {
       "rank": 1,
-      "name": "Braden Smith",
-      "team": "Purdue",
-      "headshotUrl": "braden-smith.png",
-      "blurb": "Best player in the country. Nothing more to be said."
+      "name": "Keaton Wagler",
+      "team": "Illinois",
+      "headshotUrl": "keaton-wagler.png",
+      "blurb": "What Keaton Wagler is doing right now is something we won't see in this conference for a long time."
     },
     {
       "rank": 2,
-      "name": "Jaxon Kohler",
-      "team": "Michigan State",
-      "headshotUrl": "jaxon-kohler.png",
-      "blurb": "Jeremy Fears Jr. might be the leader of this team, but Jaxon Kohler is the engine."
+      "name": "Braden Smith",
+      "team": "Purdue",
+      "headshotUrl": "braden-smith.png",
+      "blurb": "Still playing great but Wagler has been on a different level."
     },
     {
-      "rank": 4,
+      "rank": 3,
       "name": "Yaxel Lendeborg",
       "team": "Michigan",
       "headshotUrl": "yaxel-lendeborg.png",
-      "blurb": "Will be unguardable if he can shoot close to 40% from three."
+      "blurb": "It's interesting how he doesn't necessarily jump off the screen every game but the impact is undeniable."
     },
     {
       "rank": 4,
-      "name": "Bennett Stirtz",
-      "team": "Iowa",
-      "headshotUrl": "bennett-stirtz.png",
-      "blurb": "Might be the most valuable player in the conference because Iowa looks dicey when he isn't on the floor."
+      "name": "Jeremy Fears Jr.",
+      "team": "Michigan State",
+      "headshotUrl": "jeremy-fears-jr.png",
+      "blurb": "Might not be the most ethical basketball you have ever seen but can't deny the numbers and impact."
     },
     {
       "rank": 5,
-      "name": "Nick Martinelli",
-      "team": "Purdue",
-      "headshotUrl": "nick-martinelli.png",
-      "blurb": "Putting up some crazy scoring numbers. Shame he doesn't have a good team around him."
+      "name": "Pryce Sandfort",
+      "team": "Nebraska",
+      "headshotUrl": "pryce-sandfort.png",
+      "blurb": "Best shooter in the country."
     }
   ],
-  "honorableMentions": [{"name": "Kylan Boswell"}, {"name": "Reink Mast"}, {"name": "Bruce Thornton"}, {"name": "Jeremy Fears Jr."}],
+  "honorableMentions": [{"name": "Bennett Stirtz"}, {"name": "Nick Martinelli"}, {"name": "Jaxon Kohler"}, {"name": "Nick Boyd"}],
   "freshmen": {
     "top": [
       {
@@ -48,19 +48,19 @@
       },
       {
         "rank": 2,
-        "name": "David Mirkovic",
-        "team": "Illinois",
-        "headshotUrl": "david-mirkovic.png",
-        "blurb": ""
-      },
-      {
-        "rank": 3,
         "name": "Hannes Steinbach",
         "team": "Washington",
         "headshotUrl": "hannes-steinbach.png",
         "blurb": ""
       },
         {
+        "rank": 3,
+        "name": "David Mirkovic",
+        "team": "Illinois",
+        "headshotUrl": "david-mirkovic.png",
+        "blurb": ""
+      },
+      {
         "rank": 4,
         "name": "Braden Frager",
         "team": "Nebraska",

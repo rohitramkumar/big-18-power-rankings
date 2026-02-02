@@ -1,0 +1,182 @@
+[
+    {
+        "id": "ill",
+        "name": "Illinois",
+        "logoUrl": "illinois.png",
+        "rank": 1,
+        "record": "19-3 (10-1), TRank: 7, KP: 6",
+        "blurb": "Illinois and Michigan are 1a and 1b but Illinois has to have the edge at the guard spot with Wagler.",
+        "tournamentStatus": "lock",
+        "trend": 2
+    },
+    {
+        "id": "mich",
+        "name": "Michigan",
+        "logoUrl": "michigan.png",
+        "rank": 2,
+        "record": "20-1 (10-1), TRank: 1, KP: 1",
+        "blurb": "Sometimes Elliot Cadeau plays like he has CTE..Michigan will go as far as he goes.",
+        "tournamentStatus": "lock",
+        "trend": -1
+    },
+    {
+        "id": "neb",
+        "name": "Nebraska",
+        "logoUrl": "nebraska.png",
+        "rank": 3,
+        "record": "20-2 (9-2), TRank: 13, KP: 12",
+        "blurb": "This is still a good team but they feel fragile. So dependent on three point shooting and don't have athletes.",
+        "tournamentStatus": "lock",
+        "trend": 1
+    },
+    {
+        "id": "msu",
+        "name": "Michigan State",
+        "logoUrl": "michigan-state.png",
+        "rank": 4,
+        "record": "19-3 (9-2), TRank: 12, KP: 8",
+        "blurb": "The emergence of Jordan Scott is a huge development for a team that can't shoot.",
+        "tournamentStatus": "lock",
+        "trend": 1
+    },
+    {
+        "id": "pur",
+        "name": "Purdue",
+        "logoUrl": "purdue.png",
+        "rank": 5,
+        "record": "18-4 (8-3), TRank: 9, KP: 10",
+        "blurb": "TKR needs to get right.",
+        "tournamentStatus": "lock",
+        "trend": -3
+    },
+    {
+        "id": "wis",
+        "name": "Wisconsin",
+        "logoUrl": "wisconsin.png",
+        "rank": 6,
+        "record": "16-6 (8-3), TRank: 35, KP: 37",
+        "blurb": "Nick Boyd has been hooping as of late.",
+        "tournamentStatus": "work-to-do",
+        "trend": 1
+    },
+    {
+        "id": "iowa",
+        "name": "Iowa",
+        "logoUrl": "iowa.png",
+        "rank": 7,
+        "record": "15-5 (5-4), TRank: 20, KP: 22",
+        "blurb": "The emergence of Tavion Banks is huge for a team that desperately needs a reliable second option.",
+        "tournamentStatus": "work-to-do",
+        "trend": -1
+    },
+    {
+        "id": "wash",
+        "name": "Washington",
+        "logoUrl": "washington.png",
+        "rank": 8,
+        "record": "12-10 (4-7), TRank: 44, KP: 46",
+        "blurb": "Make or break time for this team.",
+        "tournamentStatus": "not-sure",
+        "trend": 1
+    },
+    {
+        "id": "ind",
+        "name": "Indiana",
+        "logoUrl": "indiana.png",
+        "rank": 9,
+        "record": "15-7 (6-5), TRank: 23, KP: 33",
+        "blurb": "Indiana is starting to get rolling. If they can finish the CA trip 2-0 that would be massive.",
+        "tournamentStatus": "work-to-do",
+        "trend": 1
+    },
+    {
+        "id": "ucla",
+        "name": "UCLA",
+        "logoUrl": "ucla.png",
+        "rank": 10,
+        "record": "15-7 (7-4), TRank: 36, KP: 38",
+        "blurb": "Mick Cronin is just annoying.",
+        "tournamentStatus": "work-to-do",
+        "trend": -2
+    },
+    {
+        "id": "usc",
+        "name": "USC",
+        "logoUrl": "usc.png",
+        "rank": 11,
+        "record": "16-6 (5-6), TRank: 49, KP: 52",
+        "blurb": "Ezra Ausar should be playing defensive end for Lincoln Riley.",
+        "tournamentStatus": "work-to-do",
+        "trend": 3
+    },
+    {
+        "id": "osu",
+        "name": "Ohio State",
+        "logoUrl": "ohio-state.png",
+        "rank": 12,
+        "record": "14-7 (6-5), TRank: 40, KP: 42",
+        "blurb": "Bruce Thornton is looking like he's going to never play in the NCAA tournament. What a shame.",
+        "tournamentStatus": "not-sure",
+        "trend": -1
+    },
+    {
+        "id": "minn",
+        "name": "Minnesota",
+        "logoUrl": "minnesota.png",
+        "rank": 13,
+        "record": "10-12 (3-8), TRank: 60, KP: 79",
+        "blurb": "Niko Medved has a pesky little squad. Lack of depth hurts but they can pick off anybody at home.",
+        "tournamentStatus": "out",
+        "trend": -1
+    },
+    {
+        "id": "nu",
+        "name": "Northwestern",
+        "logoUrl": "northwestern.png",
+        "rank": 14,
+        "record": "10-12 (2-9), TRank: 64, KP: 64",
+        "blurb": "The pieces around Nick Martinelli have not materialized and time is running out.",
+        "tournamentStatus": "out",
+        "trend": -1
+    },
+    {
+        "id": "ore",
+        "name": "Oregon",
+        "logoUrl": "oregon.png",
+        "rank": 16,
+        "record": "8-13 (1-9), TRank: 89, KP: 101",
+        "blurb": "Nate Bittle being out for pretty much the rest of the season is a blow below the waist.",
+        "tournamentStatus": "out",
+        "trend": -1
+    },
+    {
+        "id": "ru",
+        "name": "Rutgers",
+        "logoUrl": "rutgers.png",
+        "rank": 16,
+        "record": "9-13 (2-9), TRank: 149, KP: 147",
+        "blurb": "Steadied the ship a bit with two conference wins..does this buy Pikiell some time?",
+        "tournamentStatus": "out",
+        "trend": 0
+    },
+    {
+        "id": "psu",
+        "name": "Penn State",
+        "logoUrl": "penn-state.png",
+        "rank": 17,
+        "record": "10-12 (1-10), TRank: 126, KP: 130",
+        "blurb": "The only winless team in conference finally gets off the mat.",
+        "tournamentStatus": "out",
+        "trend": 1
+    },
+    {
+        "id": "md",
+        "name": "Maryland",
+        "logoUrl": "maryland.png",
+        "rank": 18,
+        "record": "8-13 (1-9), TRank: 129, KP: 122",
+        "blurb": "Next years recruiting class can't come soon enough.",
+        "tournamentStatus": "out",
+        "trend": 0
+    }
+]
