@@ -113,6 +113,9 @@ export default function PlayerRankingsList() {
       {/* Freshman Rankings Section */}
       {players.freshmen && (
         <>
+          <div className="space-y-2">
+            <h3 className="text-lg font-semibold">Freshman Rankings</h3>
+          </div>
           <div className="space-y-4">
             {players.freshmen.top.map((player) => (
               <Card
