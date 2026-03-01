@@ -1,0 +1,182 @@
+[
+    {
+        "id": "mich",
+        "name": "Michigan",
+        "logoUrl": "michigan.png",
+        "rank": 1,
+        "record": "27-2 (17-1), TRank: 1, KP: 1",
+        "blurb": "The loss of L.J. Cason is significant..the spotlight now gets brighter on Elliot Cadeau.",
+        "tournamentStatus": "lock",
+        "trend": 1
+    },
+    {
+        "id": "ill",
+        "name": "Illinois",
+        "logoUrl": "illinois.png",
+        "rank": 2,
+        "record": "22-7 (13-5), TRank: 6, KP: 5",
+        "blurb": "Why did Keaton Wagler get a haircut?",
+        "tournamentStatus": "lock",
+        "trend": -1
+    },
+    {
+        "id": "msu",
+        "name": "Michigan State",
+        "logoUrl": "michigan-state.png",
+        "rank": 3,
+        "record": "23-5 (13-4), TRank: 12, KP: 10",
+        "blurb": "The emergence of Jordan Scott is a huge development for a team that can't shoot.",
+        "tournamentStatus": "lock",
+        "trend": 1
+    },
+    {
+        "id": "neb",
+        "name": "Nebraska",
+        "logoUrl": "nebraska.png",
+        "rank": 4,
+        "record": "25-4 (14-4), TRank: 11, KP: 12",
+        "blurb": "This is still a good team but they feel fragile. So dependent on three point shooting and don't have athletes.",
+        "tournamentStatus": "lock",
+        "trend": -1
+    },
+    {
+        "id": "pur",
+        "name": "Purdue",
+        "logoUrl": "purdue.png",
+        "rank": 5,
+        "record": "22-6 (12-5), TRank: 7, KP: 8",
+        "blurb": "Mackey Arena took a beating this year.",
+        "tournamentStatus": "lock",
+        "trend": 0
+    },
+    {
+        "id": "wis",
+        "name": "Wisconsin",
+        "logoUrl": "wisconsin.png",
+        "rank": 6,
+        "record": "20-9 (12-6), TRank: 23, KP: 34",
+        "blurb": "Bizarre loss at Oregon but with these two guards they can beat anyone in a tournament setting.",
+        "tournamentStatus": "lock",
+        "trend": 0
+    },
+    {
+        "id": "iowa",
+        "name": "Iowa",
+        "logoUrl": "iowa.png",
+        "rank": 7,
+        "record": "20-9 (10-8), TRank: 22, KP: 23",
+        "blurb": "It's Bennett Stirtz and a YMCA rec league crew around him.",
+        "tournamentStatus": "work-to-do",
+        "trend": 0
+    },
+    {
+        "id": "ucla",
+        "name": "UCLA",
+        "logoUrl": "ucla.png",
+        "rank": 8,
+        "record": "19-10 (11-7), TRank: 43, KP: 40",
+        "blurb": "Mick Cronin is just annoying.",
+        "tournamentStatus": "work-to-do",
+        "trend": 2
+    },
+    {
+        "id": "minn",
+        "name": "Minnesota",
+        "logoUrl": "minnesota.png",
+        "rank": 9,
+        "record": "14-15 (7-11), TRank: 49, KP: 70",
+        "blurb": "My favorite team to watch the last month of the season. What Niko Medved has done playing 6 guys is incredible.",
+        "tournamentStatus": "out",
+        "trend": 4
+    },
+    {
+        "id": "wash",
+        "name": "Washington",
+        "logoUrl": "washington.png",
+        "rank": 10,
+        "record": "14-15 (6-12), TRank: 48, KP: 48",
+        "blurb": "Most dissapointing team in the conference this year.",
+        "tournamentStatus": "out",
+        "trend": -2
+    },
+    {
+        "id": "ind",
+        "name": "Indiana",
+        "logoUrl": "indiana.png",
+        "rank": 11,
+        "record": "17-11 (8-9), TRank: 31, KP: 43",
+        "blurb": "Tucker Devries quit on West Virginia for this??",
+        "tournamentStatus": "out",
+        "trend": -2
+    },
+    {
+        "id": "usc",
+        "name": "USC",
+        "logoUrl": "usc.png",
+        "rank": 12,
+        "record": "18-11 (7-11), TRank: 59, KP: 61",
+        "blurb": "Ezra Ausar should be playing defensive end for Lincoln Riley.",
+        "tournamentStatus": "out",
+        "trend": -1
+    },
+    {
+        "id": "osu",
+        "name": "Ohio State",
+        "logoUrl": "ohio-state.png",
+        "rank": 13,
+        "record": "17-11 (9-8), TRank: 38, KP: 39",
+        "blurb": "Bruce Thornton is looking like he's going to never play in the NCAA tournament. What a shame.",
+        "tournamentStatus": "out",
+        "trend": -1
+    },
+    {
+        "id": "nu",
+        "name": "Northwestern",
+        "logoUrl": "northwestern.png",
+        "rank": 14,
+        "record": "13-16 (5-13), TRank: 67, KP: 64",
+        "blurb": "Nick Martinelli needs to file a TRO for another year.",
+        "tournamentStatus": "out",
+        "trend": 0
+    },
+    {
+        "id": "ore",
+        "name": "Oregon",
+        "logoUrl": "oregon.png",
+        "rank": 15,
+        "record": "11-18 (4-14), TRank: 88, KP: 100",
+        "blurb": "Dangerous team that can play spoiler late.",
+        "tournamentStatus": "out",
+        "trend": 1
+    },
+    {
+        "id": "ru",
+        "name": "Rutgers",
+        "logoUrl": "rutgers.png",
+        "rank": 16,
+        "record": "11-17 (4-13), TRank: 139, KP: 149",
+        "blurb": "Coaching decisions need to be made this offseason.",
+        "tournamentStatus": "out",
+        "trend": 0
+    },
+    {
+        "id": "psu",
+        "name": "Penn State",
+        "logoUrl": "penn-state.png",
+        "rank": 17,
+        "record": "12-17 (3-15), TRank: 128, KP: 134",
+        "blurb": "This seems like a crossroads in the short tenure of Mike Rhoades. Is he able to accumulate enough talent to get out of the cellar in this conference.",
+        "tournamentStatus": "out",
+        "trend": 0
+    },
+    {
+        "id": "md",
+        "name": "Maryland",
+        "logoUrl": "maryland.png",
+        "rank": 18,
+        "record": "11-17 (4-13), TRank: 119, KP: 123",
+        "blurb": "Next years recruiting class can't come soon enough.",
+        "tournamentStatus": "out",
+        "trend": 0
+    }
+]
