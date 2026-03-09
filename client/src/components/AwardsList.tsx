@@ -5,23 +5,23 @@ import type { Awards, AwardPlayer } from "@shared/schema";
 
 function AwardPlayerCard({ player }: { player: AwardPlayer }) {
   return (
-    <div className="flex gap-4 items-center">
+    <div className="flex flex-col items-center text-center gap-2 p-2">
       {player.headshotUrl ? (
         <img
           src={player.headshotUrl}
           alt={`${player.name} headshot`}
-          className="w-14 h-14 flex-shrink-0 rounded-md object-cover border border-border"
+          className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover border border-border flex-shrink-0"
         />
       ) : (
-        <div className="w-14 h-14 flex-shrink-0 rounded-md bg-muted border border-border" />
+        <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-muted border border-border flex-shrink-0" />
       )}
-      <div className="flex-1 min-w-0">
-        <p className="font-semibold">{player.name}</p>
+      <div className="min-w-0 w-full">
+        <p className="font-semibold text-sm leading-tight">{player.name}</p>
         {player.team && (
-          <p className="text-sm text-muted-foreground">{player.team}</p>
+          <p className="text-xs text-muted-foreground">{player.team}</p>
         )}
         {player.description && (
-          <p className="text-sm text-muted-foreground mt-1">{player.description}</p>
+          <p className="text-xs text-muted-foreground mt-1">{player.description}</p>
         )}
       </div>
     </div>
@@ -40,7 +40,7 @@ function AwardSection({
     <div className="space-y-3">
       <h3 className="text-lg font-semibold">{title}</h3>
       <Card className="p-4 md:p-6">
-        <div className="space-y-4">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-2">
           {players.map((player) => (
             <AwardPlayerCard key={`${player.name}-${player.team ?? ""}`} player={player} />
           ))}
@@ -62,14 +62,12 @@ export default function AwardsList() {
           <div key={i} className="space-y-3">
             <Skeleton className="h-6 w-48" />
             <Card className="p-4 md:p-6">
-              <div className="space-y-4">
-                {Array.from({ length: 3 }).map((_, j) => (
-                  <div key={j} className="flex gap-4 items-center">
-                    <Skeleton className="w-14 h-14 flex-shrink-0 rounded-md" />
-                    <div className="flex-1 space-y-2">
-                      <Skeleton className="h-5 w-40" />
-                      <Skeleton className="h-4 w-28" />
-                    </div>
+              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-2">
+                {Array.from({ length: 5 }).map((_, j) => (
+                  <div key={j} className="flex flex-col items-center gap-2 p-2">
+                    <Skeleton className="w-16 h-16 sm:w-20 sm:h-20 rounded-full" />
+                    <Skeleton className="h-4 w-20" />
+                    <Skeleton className="h-3 w-14" />
                   </div>
                 ))}
               </div>
@@ -120,7 +118,11 @@ export default function AwardsList() {
       <div className="space-y-3">
         <h3 className="text-lg font-semibold">6th Man of the Year</h3>
         <Card className="p-4 md:p-6">
-          <AwardPlayerCard player={awards.sixthManOfTheYear} />
+          <div className="flex justify-center">
+            <div className="w-1/3 sm:w-1/4 md:w-1/5">
+              <AwardPlayerCard player={awards.sixthManOfTheYear} />
+            </div>
+          </div>
         </Card>
       </div>
     </div>
