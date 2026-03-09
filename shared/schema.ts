@@ -46,6 +46,28 @@ export const PlayersSchema = z.object({
 
 export type Players = z.infer<typeof PlayersSchema>;
 
+export const AwardPlayerSchema = z.object({
+  name: z.string(),
+  team: z.string().optional(),
+  headshotUrl: z.string().optional(),
+  description: z.string().optional(),
+});
+
+export type AwardPlayer = z.infer<typeof AwardPlayerSchema>;
+
+export const AwardsSchema = z.object({
+  allConference: z.object({
+    firstTeam: z.array(AwardPlayerSchema),
+    secondTeam: z.array(AwardPlayerSchema),
+    thirdTeam: z.array(AwardPlayerSchema),
+  }),
+  allFreshmen: z.array(AwardPlayerSchema),
+  allDefensive: z.array(AwardPlayerSchema),
+  sixthManOfTheYear: AwardPlayerSchema,
+});
+
+export type Awards = z.infer<typeof AwardsSchema>;
+
 export const VoteStatsSchema = z.object({
   teamId: z.string(),
   total: z.number(),

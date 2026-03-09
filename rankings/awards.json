@@ -1,0 +1,176 @@
+{
+  "allConference": {
+    "firstTeam": [
+      {
+        "name": "Yaxel Lendeborg",
+        "team": "Michigan",
+        "headshotUrl": "yaxel-lendeborg.png",
+        "description": "Player of the Year"
+      },
+      {
+        "name": "Keaton Wagler",
+        "team": "Illinois",
+        "headshotUrl": "keaton-wagler.png",
+        "description": ""
+      },
+      {
+        "name": "Jeremy Fears Jr.",
+        "team": "Michigan State",
+        "headshotUrl": "jeremy-fears-jr.png",
+        "description": ""
+      },
+      {
+        "name": "Bruce Thornton",
+        "team": "Ohio State",
+        "headshotUrl": "",
+        "description": ""
+      },
+      {
+        "name": "Pryce Sandfort",
+        "team": "Nebraska",
+        "headshotUrl": "pryce-sandfort.png",
+        "description": "media"
+      },
+      {
+        "name": "Nick Martinelli",
+        "team": "Northwestern",
+        "headshotUrl": "nick-martinelli.png",
+        "description": "coaches"
+      }
+    ],
+    "secondTeam": [
+      {
+        "name": "Braden Smith",
+        "team": "Purdue",
+        "headshotUrl": "braden-smith.png",
+        "description": ""
+      },
+      {
+        "name": "Bennett Stirtz",
+        "team": "Iowa",
+        "headshotUrl": "bennett-stirtz.png",
+        "description": ""
+      },
+      {
+        "name": "Morez Johnson",
+        "team": "Illinois",
+        "headshotUrl": "",
+        "description": ""
+      },
+      {
+        "name": "Hannes Steinbach",
+        "team": "Washington",
+        "headshotUrl": "hannes-steinbach.png",
+        "description": ""
+      },
+      {
+        "name": "Nick Boyd",
+        "team": "Wisconsin",
+        "headshotUrl": "",
+        "description": ""
+      }
+    ],
+    "thirdTeam": [
+      {
+        "name": "Tyler Bilodeau",
+        "team": "UCLA",
+        "headshotUrl": "",
+        "description": ""
+      },
+      {
+        "name": "David Mirkovic",
+        "team": "Illinois",
+        "headshotUrl": "david-mirkovic.png",
+        "description": ""
+      },
+      {
+        "name": "Jaxon Kohler",
+        "team": "Michigan State",
+        "headshotUrl": "jaxon-kohler.png",
+        "description": ""
+      },
+      {
+        "name": "Lamar Wilkerson",
+        "team": "Indiana",
+        "headshotUrl": "",
+        "description": ""
+      },
+      {
+        "name": "John Blackwell",
+        "team": "Purdue",
+        "headshotUrl": "",
+        "description": ""
+      }
+    ]
+  },
+  "allFreshmen": [
+    {
+      "name": "Keaton Wagler",
+      "team": "Illinois",
+      "headshotUrl": "keaton-wagler.png",
+      "description": "Player of the Year"
+    },
+    {
+      "name": "David Mirkovic",
+      "team": "Illinois",
+      "headshotUrl": "david-mirkovic.png",
+      "description": ""
+    },
+    {
+      "name": "Braden Frager",
+      "team": "Nebraska",
+      "headshotUrl": "braden-frager.png",
+      "description": ""
+    },
+    {
+      "name": "Trey McKenney",
+      "team": "Michigan",
+      "headshotUrl": "trey-mckenney.png",
+      "description": ""
+    },
+    {
+      "name": "Hannes Steinbach",
+      "team": "Washington",
+      "headshotUrl": "hannes-steinbach.png",
+      "description": ""
+    }
+  ],
+  "allDefensive": [
+    {
+      "name": "Aday Mara",
+      "team": "USC",
+      "headshotUrl": "",
+      "description": "Player of the Year"
+    },
+    {
+      "name": "Sam Hoiberg",
+      "team": "Nebraska",
+      "headshotUrl": "",
+      "description": ""
+    },
+    {
+      "name": "Zvonimir Ivisic",
+      "team": "UCLA",
+      "headshotUrl": "",
+      "description": ""
+    },
+    {
+      "name": "Yaxel Lendeborg",
+      "team": "Michigan",
+      "headshotUrl": "yaxel-lendeborg.png",
+      "description": ""
+    },
+    {
+      "name": "Carson Cooper",
+      "team": "Minnesota",
+      "headshotUrl": "",
+      "description": ""
+    }
+  ],
+  "sixthManOfTheYear": {
+    "name": "LJ Cason",
+    "team": "Michigan",
+    "headshotUrl": "",
+    "description": ""
+  }
+}
