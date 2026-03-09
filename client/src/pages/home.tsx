@@ -13,27 +13,29 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Header />
       <main className="max-w-4xl mx-auto px-4 md:px-8 py-8 md:py-12">
-        <div className="flex justify-center gap-3 mb-8">
-          <button
-            onClick={() => setActiveTab("teams")}
-            className={`px-4 py-2 rounded-md font-semibold transition-colors ${
-              activeTab === "teams"
-                ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                : "bg-transparent text-foreground border border-border hover:bg-muted"
-            }`}
-          >
-            Team Rankings
-          </button>
-          <button
-            onClick={() => setActiveTab("players")}
-            className={`px-4 py-2 rounded-md font-semibold transition-colors ${
-              activeTab === "players"
-                ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                : "bg-transparent text-foreground border border-border hover:bg-muted"
-            }`}
-          >
-            Player Rankings
-          </button>
+        <div className="flex flex-col items-center gap-3 mb-8">
+          <div className="flex justify-center gap-3">
+            <button
+              onClick={() => setActiveTab("teams")}
+              className={`px-4 py-2 rounded-md font-semibold transition-colors ${
+                activeTab === "teams"
+                  ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                  : "bg-transparent text-foreground border border-border hover:bg-muted"
+              }`}
+            >
+              Team Rankings
+            </button>
+            <button
+              onClick={() => setActiveTab("players")}
+              className={`px-4 py-2 rounded-md font-semibold transition-colors ${
+                activeTab === "players"
+                  ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                  : "bg-transparent text-foreground border border-border hover:bg-muted"
+              }`}
+            >
+              Player Rankings
+            </button>
+          </div>
           <button
             onClick={() => setActiveTab("awards")}
             className={`px-4 py-2 rounded-md font-semibold transition-colors ${
