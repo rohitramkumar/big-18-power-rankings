@@ -2,9 +2,12 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import RankingsList from "@/components/RankingsList";
 import PlayerRankingsList from "@/components/PlayerRankingsList";
+import AwardsList from "@/components/AwardsList";
+
+type Tab = "teams" | "players" | "awards";
 
 export default function Home() {
-  const [showPlayers, setShowPlayers] = useState(false);
+  const [activeTab, setActiveTab] = useState<Tab>("teams");
 
   return (
     <div className="min-h-screen bg-background">
@@ -12,9 +15,9 @@ export default function Home() {
       <main className="max-w-4xl mx-auto px-4 md:px-8 py-8 md:py-12">
         <div className="flex justify-center gap-3 mb-8">
           <button
-            onClick={() => setShowPlayers(false)}
+            onClick={() => setActiveTab("teams")}
             className={`px-4 py-2 rounded-md font-semibold transition-colors ${
-              !showPlayers
+              activeTab === "teams"
                 ? "bg-primary text-primary-foreground hover:bg-primary/90"
                 : "bg-transparent text-foreground border border-border hover:bg-muted"
             }`}
@@ -22,17 +25,33 @@ export default function Home() {
             Team Rankings
           </button>
           <button
-            onClick={() => setShowPlayers(true)}
+            onClick={() => setActiveTab("players")}
             className={`px-4 py-2 rounded-md font-semibold transition-colors ${
-              showPlayers
+              activeTab === "players"
                 ? "bg-primary text-primary-foreground hover:bg-primary/90"
                 : "bg-transparent text-foreground border border-border hover:bg-muted"
             }`}
           >
             Player Rankings
           </button>
+          <button
+            onClick={() => setActiveTab("awards")}
+            className={`px-4 py-2 rounded-md font-semibold transition-colors ${
+              activeTab === "awards"
+                ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                : "bg-transparent text-foreground border border-border hover:bg-muted"
+            }`}
+          >
+            End of Year Awards
+          </button>
         </div>
-        {showPlayers ? <PlayerRankingsList /> : <RankingsList />}
+        {activeTab === "awards" ? (
+          <AwardsList />
+        ) : activeTab === "players" ? (
+          <PlayerRankingsList />
+        ) : (
+          <RankingsList />
+        )}
       </main>
       <footer className="border-t border-border mt-12">
         <div className="max-w-4xl mx-auto px-4 md:px-8 py-8">

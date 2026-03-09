@@ -2,7 +2,7 @@ import { Express } from "express";
 import { createServer, type Server } from "http";
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { TeamSchema, Team, PlayersSchema, SubmitVoteSchema, VoteStats, VoteStatsSchema } from "../shared/schema";
+import { TeamSchema, Team, PlayersSchema, SubmitVoteSchema, VoteStats, VoteStatsSchema, AwardsSchema } from "../shared/schema";
 import { db } from "./firestore";
 import { FieldValue } from 'firebase-admin/firestore';
 
@@ -40,7 +40,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         const rankingFiles = files
           .filter(
             (file) =>
-              file.endsWith(".json") && !file.startsWith("template") && file !== "mvps.json" && file !== "players.json"
+              file.endsWith(".json") && !file.startsWith("template") && file !== "mvps.json" && file !== "players.json" && file !== "awards.json"
           )
           .sort()
           .reverse(); // Sorts to get the latest week first
@@ -138,6 +138,24 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // API endpoint for end of year awards
+  app.get("/api/awards", async (_req, res) => {
+    try {
+      const rankingsDir = join(process.cwd(), "rankings");
+      const awardsPath = join(rankingsDir, "awards.json");
+
+      const fileContent = await readFile(awardsPath, "utf-8");
+      const rawData = JSON.parse(fileContent);
+
+      const validatedData = AwardsSchema.parse(rawData);
+
+      res.json(validatedData);
+    } catch (error) {
+      console.error("Error fetching awards:", error);
+      res.status(500).json({ error: "Failed to fetch awards." });
+    }
+  });
+
   // API endpoint to submit a vote
   app.post("/api/votes/submit", async (req, res) => {
     try {
@@ -154,7 +172,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const rankingFiles = files
         .filter(
           (file) =>
-            file.endsWith(".json") && !file.startsWith("template") && file !== "mvps.json" && file !== "players.json"
+            file.endsWith(".json") && !file.startsWith("template") && file !== "mvps.json" && file !== "players.json" && file !== "awards.json"
         )
         .sort()
         .reverse();

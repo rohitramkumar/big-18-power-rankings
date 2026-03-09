@@ -1,0 +1,170 @@
+{
+  "allConference": {
+    "firstTeam": [
+      {
+        "name": "Keaton Wagler",
+        "team": "Illinois",
+        "headshotUrl": "keaton-wagler.png",
+        "description": ""
+      },
+      {
+        "name": "Braden Smith",
+        "team": "Purdue",
+        "headshotUrl": "braden-smith.png",
+        "description": ""
+      },
+      {
+        "name": "Yaxel Lendeborg",
+        "team": "Michigan",
+        "headshotUrl": "yaxel-lendeborg.png",
+        "description": ""
+      },
+      {
+        "name": "Jeremy Fears Jr.",
+        "team": "Michigan State",
+        "headshotUrl": "jeremy-fears-jr.png",
+        "description": ""
+      },
+      {
+        "name": "Pryce Sandfort",
+        "team": "Nebraska",
+        "headshotUrl": "pryce-sandfort.png",
+        "description": ""
+      }
+    ],
+    "secondTeam": [
+      {
+        "name": "Bennett Stirtz",
+        "team": "Iowa",
+        "headshotUrl": "",
+        "description": ""
+      },
+      {
+        "name": "Nick Martinelli",
+        "team": "Iowa",
+        "headshotUrl": "",
+        "description": ""
+      },
+      {
+        "name": "Jaxon Kohler",
+        "team": "Michigan State",
+        "headshotUrl": "",
+        "description": ""
+      },
+      {
+        "name": "Nick Boyd",
+        "team": "Northwestern",
+        "headshotUrl": "",
+        "description": ""
+      },
+      {
+        "name": "Elliot Cadeau",
+        "team": "Michigan",
+        "headshotUrl": "",
+        "description": ""
+      }
+    ],
+    "thirdTeam": [
+      {
+        "name": "Player A",
+        "team": "Team A",
+        "headshotUrl": "",
+        "description": ""
+      },
+      {
+        "name": "Player B",
+        "team": "Team B",
+        "headshotUrl": "",
+        "description": ""
+      },
+      {
+        "name": "Player C",
+        "team": "Team C",
+        "headshotUrl": "",
+        "description": ""
+      },
+      {
+        "name": "Player D",
+        "team": "Team D",
+        "headshotUrl": "",
+        "description": ""
+      },
+      {
+        "name": "Player E",
+        "team": "Team E",
+        "headshotUrl": "",
+        "description": ""
+      }
+    ]
+  },
+  "allFreshmen": [
+    {
+      "name": "Keaton Wagler",
+      "team": "Illinois",
+      "headshotUrl": "keaton-wagler.png",
+      "description": ""
+    },
+    {
+      "name": "Hannes Steinbach",
+      "team": "Washington",
+      "headshotUrl": "hannes-steinbach.png",
+      "description": ""
+    },
+    {
+      "name": "David Mirkovic",
+      "team": "Illinois",
+      "headshotUrl": "david-mirkovic.png",
+      "description": ""
+    },
+    {
+      "name": "Braden Frager",
+      "team": "Nebraska",
+      "headshotUrl": "braden-frager.png",
+      "description": ""
+    },
+    {
+      "name": "Trey McKenney",
+      "team": "Michigan",
+      "headshotUrl": "trey-mckenney.png",
+      "description": ""
+    }
+  ],
+  "allDefensive": [
+    {
+      "name": "Player 1",
+      "team": "Team 1",
+      "headshotUrl": "",
+      "description": ""
+    },
+    {
+      "name": "Player 2",
+      "team": "Team 2",
+      "headshotUrl": "",
+      "description": ""
+    },
+    {
+      "name": "Player 3",
+      "team": "Team 3",
+      "headshotUrl": "",
+      "description": ""
+    },
+    {
+      "name": "Player 4",
+      "team": "Team 4",
+      "headshotUrl": "",
+      "description": ""
+    },
+    {
+      "name": "Player 5",
+      "team": "Team 5",
+      "headshotUrl": "",
+      "description": ""
+    }
+  ],
+  "sixthManOfTheYear": {
+    "name": "Player Name",
+    "team": "Team Name",
+    "headshotUrl": "",
+    "description": ""
+  }
+}
