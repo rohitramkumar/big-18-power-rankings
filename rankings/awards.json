@@ -2,21 +2,15 @@
   "allConference": {
     "firstTeam": [
       {
-        "name": "Keaton Wagler",
-        "team": "Illinois",
-        "headshotUrl": "keaton-wagler.png",
-        "description": ""
-      },
-      {
-        "name": "Braden Smith",
-        "team": "Purdue",
-        "headshotUrl": "braden-smith.png",
-        "description": ""
-      },
-      {
         "name": "Yaxel Lendeborg",
         "team": "Michigan",
         "headshotUrl": "yaxel-lendeborg.png",
+        "description": "Player of the Year"
+      },
+      {
+        "name": "Keaton Wagler",
+        "team": "Illinois",
+        "headshotUrl": "keaton-wagler.png",
         "description": ""
       },
       {
@@ -26,72 +20,84 @@
         "description": ""
       },
       {
+        "name": "Bruce Thornton",
+        "team": "Ohio State",
+        "headshotUrl": "",
+        "description": ""
+      },
+      {
         "name": "Pryce Sandfort",
         "team": "Nebraska",
         "headshotUrl": "pryce-sandfort.png",
-        "description": ""
+        "description": "media"
+      },
+      {
+        "name": "Nick Martinelli",
+        "team": "Northwestern",
+        "headshotUrl": "nick-martinelli.png",
+        "description": "coaches"
       }
     ],
     "secondTeam": [
       {
+        "name": "Braden Smith",
+        "team": "Purdue",
+        "headshotUrl": "braden-smith.png",
+        "description": ""
+      },
+      {
         "name": "Bennett Stirtz",
         "team": "Iowa",
+        "headshotUrl": "bennett-stirtz.png",
+        "description": ""
+      },
+      {
+        "name": "Morez Johnson",
+        "team": "Illinois",
         "headshotUrl": "",
         "description": ""
       },
       {
-        "name": "Nick Martinelli",
-        "team": "Iowa",
-        "headshotUrl": "",
-        "description": ""
-      },
-      {
-        "name": "Jaxon Kohler",
-        "team": "Michigan State",
-        "headshotUrl": "",
+        "name": "Hannes Steinbach",
+        "team": "Washington",
+        "headshotUrl": "hannes-steinbach.png",
         "description": ""
       },
       {
         "name": "Nick Boyd",
-        "team": "Northwestern",
-        "headshotUrl": "",
-        "description": ""
-      },
-      {
-        "name": "Elliot Cadeau",
-        "team": "Michigan",
+        "team": "Wisconsin",
         "headshotUrl": "",
         "description": ""
       }
     ],
     "thirdTeam": [
       {
-        "name": "Player A",
-        "team": "Team A",
+        "name": "Tyler Bilodeau",
+        "team": "UCLA",
         "headshotUrl": "",
         "description": ""
       },
       {
-        "name": "Player B",
-        "team": "Team B",
+        "name": "David Mirkovic",
+        "team": "Illinois",
+        "headshotUrl": "david-mirkovic.png",
+        "description": ""
+      },
+      {
+        "name": "Jaxon Kohler",
+        "team": "Michigan State",
+        "headshotUrl": "jaxon-kohler.png",
+        "description": ""
+      },
+      {
+        "name": "Lamar Wilkerson",
+        "team": "Indiana",
         "headshotUrl": "",
         "description": ""
       },
       {
-        "name": "Player C",
-        "team": "Team C",
-        "headshotUrl": "",
-        "description": ""
-      },
-      {
-        "name": "Player D",
-        "team": "Team D",
-        "headshotUrl": "",
-        "description": ""
-      },
-      {
-        "name": "Player E",
-        "team": "Team E",
+        "name": "John Blackwell",
+        "team": "Purdue",
         "headshotUrl": "",
         "description": ""
       }
@@ -102,13 +108,7 @@
       "name": "Keaton Wagler",
       "team": "Illinois",
       "headshotUrl": "keaton-wagler.png",
-      "description": ""
-    },
-    {
-      "name": "Hannes Steinbach",
-      "team": "Washington",
-      "headshotUrl": "hannes-steinbach.png",
-      "description": ""
+      "description": "Player of the Year"
     },
     {
       "name": "David Mirkovic",
@@ -127,43 +127,49 @@
       "team": "Michigan",
       "headshotUrl": "trey-mckenney.png",
       "description": ""
+    },
+    {
+      "name": "Hannes Steinbach",
+      "team": "Washington",
+      "headshotUrl": "hannes-steinbach.png",
+      "description": ""
     }
   ],
   "allDefensive": [
     {
-      "name": "Player 1",
-      "team": "Team 1",
+      "name": "Aday Mara",
+      "team": "USC",
+      "headshotUrl": "",
+      "description": "Player of the Year"
+    },
+    {
+      "name": "Sam Hoiberg",
+      "team": "Nebraska",
       "headshotUrl": "",
       "description": ""
     },
     {
-      "name": "Player 2",
-      "team": "Team 2",
+      "name": "Zvonimir Ivisic",
+      "team": "UCLA",
       "headshotUrl": "",
       "description": ""
     },
     {
-      "name": "Player 3",
-      "team": "Team 3",
-      "headshotUrl": "",
+      "name": "Yaxel Lendeborg",
+      "team": "Michigan",
+      "headshotUrl": "yaxel-lendeborg.png",
       "description": ""
     },
     {
-      "name": "Player 4",
-      "team": "Team 4",
-      "headshotUrl": "",
-      "description": ""
-    },
-    {
-      "name": "Player 5",
-      "team": "Team 5",
+      "name": "Carson Cooper",
+      "team": "Minnesota",
       "headshotUrl": "",
       "description": ""
     }
   ],
   "sixthManOfTheYear": {
-    "name": "Player Name",
-    "team": "Team Name",
+    "name": "LJ Cason",
+    "team": "Michigan",
     "headshotUrl": "",
     "description": ""
   }
